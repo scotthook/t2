@@ -1,0 +1,10 @@
+name: Campaigns
+form: $/andrewpe/crm/models/campaign/fields.yaml
+modelClass: AndrewPe\Crm\Models\Campaign
+defaultRedirect: andrewpe/crm/campaigns
+create:
+    redirect: 'andrewpe/crm/campaigns/update/:id'
+    redirectClose: andrewpe/crm/campaigns
+update:
+    redirect: andrewpe/crm/campaigns
+    redirectClose: andrewpe/crm/campaigns

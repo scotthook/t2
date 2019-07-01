@@ -1,0 +1,49 @@
+==
+<style>
+.credit-offer-main		{ display: block; width: 749px; height: 704px; margin: 0 auto; }
+.credit-offer-mobile	{ display: none; }
+.credit-image			{ float: left; margin: 0; padding: 0; }
+H4						{ font-size: 18px; color: #000000; text-shadow: none; }
+
+@media (max-width: 479px) {
+.credit-offer-main		{ display: none; }
+.credit-offer-mobile	{ display: block; width: 320px; height: 740px; margin: 0 auto; }
+}
+</style>
+
+<!--<center><h4>As you start the mortgage process, we recommend improving your credit score if its below 620. Refinancing your current mortgage or obtaining a new one will be very difficult with a low credit score.</h4></center>
+<center><h4>We have partnered with Lexington Law, the leading Credit Repair company, to help people with low credit scores improve their chances of getting a low interest rate. Click below to get more information.</h4></center>-->
+
+	<div class="credit-offer-main">
+	<center><h4>As you start the mortgage process, we recommend improving your credit score if its below 620. Refinancing your current mortgage or obtaining a new one can be very difficult with a low credit score.</h4></center>
+	<center><h4>Lexington Law, the leading Credit Repair company, helps people with low credit scores improve their chances of getting a low interest rate with a fair and accurate credit report. Click below to get more information.</h4></center>
+	<a href="" id="crediturl1" name="crediturl"><img class="credit-image" src="{{ 'assets/images/creditoffer/credit_01_01.jpg'|theme }}" ></a>
+	<a href="tel:1-855-980-2076"><img class="credit-image" src="{{ 'assets/images/creditoffer/credit_01_02.jpg'|theme }}"></a>
+	<a href="" id="crediturl2" name="crediturl"><img class="credit-image" src="{{ 'assets/images/creditoffer/credit_01_03.jpg'|theme }}"></a>
+	<a href="" id="crediturl3" name="crediturl"><img class="credit-image" src="{{ 'assets/images/creditoffer/credit_01_04.jpg'|theme }}"></a>
+	</div>
+	
+	<div class="credit-offer-mobile">
+	<a href="" id="crediturl4" name="crediturl"><img class="credit-image" src="{{ 'assets/images/creditoffer/credit_02_01.jpg'|theme }}"></a>
+	<a href="tel:1-855-980-2076"><img class="credit-image" src="{{ 'assets/images/creditoffer/credit_02_02.jpg'|theme }}"></a>
+	<a href="" id="crediturl5" name="crediturl"><img class="credit-image" src="{{ 'assets/images/creditoffer/credit_02_03.jpg'|theme }}"></a>
+	</div>
+	
+	<br><br>
+	
+<script>
+
+function getCookie(name) {
+	var value = "; " + document.cookie;
+	var parts = value.split("; " + name + "=");
+	if (parts.length == 2) return parts.pop().split(";").shift();
+}
+
+	var url = "https://brrpost.com/?a=2&oc=140&c=319&m=11&source_id=" + getCookie("site")  + "&first_name=" + getCookie("first_name") + "&last_name=" + getCookie("last_name") + "&email=" + getCookie("email") + "&zip=" + getCookie("zipcode") + "&address=" + getCookie("address")+ "&phone=" + getCookie("phone_home") ;
+	document.getElementById("crediturl1").href=url;
+	document.getElementById("crediturl2").href=url;
+	document.getElementById("crediturl3").href=url;
+	document.getElementById("crediturl4").href=url;
+	document.getElementById("crediturl5").href=url;
+
+</script>

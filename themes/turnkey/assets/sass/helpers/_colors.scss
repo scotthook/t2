@@ -1,0 +1,23 @@
+// TODO: plugin brand colors
+
+$black: #000;
+$gray: #9ea3a4;
+$purple: #bd32ba;
+$blue: #0082ca;
+$green: #3DAE2B;
+$lime: #93D500;
+
+$primary: $blue !default;
+$primary-md: darken($primary, 10%) !default;
+$secondary: $purple;
+$secondary-md: darken($secondary, 10%) !default;
+
+$black: #000;
+$gray: #9ea3a4;
+$blue: #3f9ad4;
+$navy: #1e64a0;
+
+$text-color: #343a40;
+$bg-color: #ffffff;
+
+

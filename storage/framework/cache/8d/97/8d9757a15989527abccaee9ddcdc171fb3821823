@@ -1,0 +1,124 @@
+1561978241a:1:{s:14:"contact-us.htm";a:12:{s:8:"fileName";s:14:"contact-us.htm";s:7:"content";s:2371:"title = "Contact Us"
+url = "/contact-us"
+layout = "form-template"
+meta_title = "Contact Us | Turnkey Office Solutions"
+meta_description = "Specializing in office equipments, business processes, VOIP telecommunications"
+is_hidden = 0
+
+[genericForm]
+rules[name] = "required"
+rules[email] = "require|email"
+rules[comments] = "required"
+messages_success = "Your form was successfully submitted"
+messages_errors = "There were errors with your submission"
+mail_enabled = 1
+mail_subject = "Contact Us | Turnkey Office Solutions"
+mail_recipients[] = "andrew.pe@gmail.com"
+reset_form = 0
+inline_errors = "disabled"
+sanitize_data = "disabled"
+anonymize_ip = "disabled"
+recaptcha_theme = "light"
+recaptcha_type = "image"
+recaptcha_size = "normal"
+skip_database = 1
+==
+<!-- Body Content -->
+      <!-- Body Content -->
+	<main role="main"> <!-- Header -->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-6 hideOver box1 formHeader tinted contactBannerNew formBox white">
+			    <h1>Get in Touch With Us</h1>
+			    <p class="white">Phone: <a class="white" href="8005610580">(800) 561-0580</a><br/>
+			    Email: <a href="mailto:support@turnkeyofficesolutions.com" class="white">support@turnkeyofficesolutions.com</a> </p>
+			    <p></p>
+			</div>
+			<div class="col-lg-6 hideOver formBox2 blueBoxContent formBox">
+				<h3>Contact Turnkey Office Solutions</h3>
+				
+				<form data-request="{{ genericForm }}::onFormSubmit">
+
+    {{ form_token() }}
+
+    <div id="{{ genericForm }}_forms_flash"></div>
+
+    <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" class="form-control">
+    </div>
+<input type="hidden" name="campaign" value="contact-us" />
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" class="form-control">
+    </div>
+    <div class="form-group">
+        <textarea id="comments" name="comments" rows="8" cols="80" class="form-control"></textarea>
+    </div>
+
+    
+
+    <button id="simpleContactSubmitButton" type="submit" class="btn btn-default">Submit</button>
+
+</form>
+                
+                </div>
+				
+				
+			</div>
+		</div>
+	</div>
+	<!-- /Header -->
+      <!-- Main Content -->
+		<div class="container-fluid contentSections mt-5">
+							
+		</div>";s:5:"mtime";i:1561976054;s:6:"markup";s:1614:"<!-- Body Content -->
+      <!-- Body Content -->
+	<main role="main"> <!-- Header -->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-6 hideOver box1 formHeader tinted contactBannerNew formBox white">
+			    <h1>Get in Touch With Us</h1>
+			    <p class="white">Phone: <a class="white" href="8005610580">(800) 561-0580</a><br/>
+			    Email: <a href="mailto:support@turnkeyofficesolutions.com" class="white">support@turnkeyofficesolutions.com</a> </p>
+			    <p></p>
+			</div>
+			<div class="col-lg-6 hideOver formBox2 blueBoxContent formBox">
+				<h3>Contact Turnkey Office Solutions</h3>
+				
+				<form data-request="{{ genericForm }}::onFormSubmit">
+
+    {{ form_token() }}
+
+    <div id="{{ genericForm }}_forms_flash"></div>
+
+    <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" class="form-control">
+    </div>
+<input type="hidden" name="campaign" value="contact-us" />
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" class="form-control">
+    </div>
+    <div class="form-group">
+        <textarea id="comments" name="comments" rows="8" cols="80" class="form-control"></textarea>
+    </div>
+
+    
+
+    <button id="simpleContactSubmitButton" type="submit" class="btn btn-default">Submit</button>
+
+</form>
+                
+                </div>
+				
+				
+			</div>
+		</div>
+	</div>
+	<!-- /Header -->
+      <!-- Main Content -->
+		<div class="container-fluid contentSections mt-5">
+							
+		</div>";s:4:"code";N;s:5:"title";s:10:"Contact Us";s:3:"url";s:11:"/contact-us";s:6:"layout";s:13:"form-template";s:10:"meta_title";s:37:"Contact Us | Turnkey Office Solutions";s:16:"meta_description";s:78:"Specializing in office equipments, business processes, VOIP telecommunications";s:9:"is_hidden";s:1:"0";s:11:"genericForm";a:14:{s:5:"rules";a:3:{s:4:"name";s:8:"required";s:5:"email";s:13:"require|email";s:8:"comments";s:8:"required";}s:16:"messages_success";s:36:"Your form was successfully submitted";s:15:"messages_errors";s:38:"There were errors with your submission";s:12:"mail_enabled";s:1:"1";s:12:"mail_subject";s:37:"Contact Us | Turnkey Office Solutions";s:15:"mail_recipients";a:1:{i:0;s:19:"andrew.pe@gmail.com";}s:10:"reset_form";s:1:"0";s:13:"inline_errors";s:8:"disabled";s:13:"sanitize_data";s:8:"disabled";s:12:"anonymize_ip";s:8:"disabled";s:15:"recaptcha_theme";s:5:"light";s:14:"recaptcha_type";s:5:"image";s:14:"recaptcha_size";s:6:"normal";s:13:"skip_database";s:1:"1";}}}

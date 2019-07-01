@@ -1,0 +1,17 @@
+==
+<!DOCTYPE html>
+<html lang="en">
+    {% partial 'head' %}
+
+    <body class="layout-{{ this.layout.id }} page-{{ this.page.id }}">
+        <div class="global-header">
+            {% partial 'no-nav' %}
+        </div>
+        <div class="global-page">
+            {% page %}
+        </div>
+
+        {% partial 'scripts' %}
+      
+    </body>
+</html>

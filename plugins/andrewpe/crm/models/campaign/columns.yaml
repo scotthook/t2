@@ -1,0 +1,13 @@
+columns:
+    name:
+        label: Name
+        type: text
+    description:
+        label: Description
+        type: text
+    lead_count:
+        label: 'Lead Count'
+        type: number
+    page_url:
+        label: 'Page URL'
+        type: text

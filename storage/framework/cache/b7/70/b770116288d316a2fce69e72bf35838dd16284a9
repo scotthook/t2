@@ -1,0 +1,25 @@
+1561978106a:1:{s:11:"scripts.htm";a:6:{s:8:"fileName";s:11:"scripts.htm";s:7:"content";s:485:"description = "Used for linking to internal and third-party javascript. There shouldn't be any actual JavaScript in this file"
+==
+<!-- Google Tag Manager (noscript) -->
+
+<!-- Fancy Animations -->
+<script src="//unpkg.com/aos@next/dist/aos.js"></script>
+
+<script src="{{ 'assets/js/app.js' | theme }}"></script>
+
+{% framework extras %}
+{% scripts %}
+
+<script src="{{ '/assets/js/bootstrap.js' | theme }}"></script>
+<script src="{{ '/assets/js/popper.js' | theme }}"></script>";s:5:"mtime";i:1561547966;s:6:"markup";s:355:"<!-- Google Tag Manager (noscript) -->
+
+<!-- Fancy Animations -->
+<script src="//unpkg.com/aos@next/dist/aos.js"></script>
+
+<script src="{{ 'assets/js/app.js' | theme }}"></script>
+
+{% framework extras %}
+{% scripts %}
+
+<script src="{{ '/assets/js/bootstrap.js' | theme }}"></script>
+<script src="{{ '/assets/js/popper.js' | theme }}"></script>";s:4:"code";N;s:11:"description";s:110:"Used for linking to internal and third-party javascript. There shouldn't be any actual JavaScript in this file";}}

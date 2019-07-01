@@ -1,0 +1,49 @@
+==
+<head>
+  <meta charset="utf-8">
+  <title>{% if this.page.meta_title %}{{ this.page.meta_title }}{% else %}{{ this.theme.config.title }}{% endif %}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{% if this.page.meta_description %}{{ this.page.meta_description }}{% else %}{{ this.theme.config.description }}{% endif %}">
+  <meta name="keywords" content="{% if this.page.keywords %}{{ this.page.keywords }}{% else %}{{ this.theme.meta_keywords }}{% endif %}">
+  <meta name="title" content="{% if this.page.meta_title %}{{ this.page.meta_title }}{% else %}{{ this.theme.config.title }}{% endif %}">
+
+  <!-- structured data -->
+  <script type="application/ld+json">
+    {
+       "@context": "http://schema.org",
+       "@type": "WebSite",
+       "url": "https://www.bestratereferrals.com",
+    }
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-589H6VH');</script>
+  <!-- End Google Tag Manager -->
+  
+  <meta name="google-site-verification" content="rWEZHqd9-xdb45ElVhE4phMrVCcvdcPxBstop1hETZY" />
+  
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <!-- Fonts -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+
+  <!-- Fancy Animations -->
+  <link rel="stylesheet" href="//unpkg.com/aos@next/dist/aos.css" />
+  
+  <meta property="og:url" content="https://bestratereferrals.com" />
+  <meta property="og:title" content="Mortgage Leads and Personal Loan Leads | Best Rate Referrals" />
+  <meta name="twitter:title" content="Mortgage Leads and Personal Loan Leads | Best Rate Referrals">
+  <meta property="og:description" content="Specializing in mortgage leads and personal loan leads, Best Rate Referrals is a boutique powerhouse digital agency providing high-touch service to connect consumer finance lenders with the right borrowers at the right time. Call Best Rate Referrals: (800) 811-1402" />
+  <meta name="twitter:description" content="Specializing in mortgage leads and personal loan leads, Best Rate Referrals is a boutique powerhouse digital agency providing high-touch service to connect consumer finance lenders with the right borrowers at the right time. Call Best Rate Referrals: (800) 811-1402" />
+  
+  <link rel="shortcut icon" type="image/x-icon" href="{{ 'assets/images/favicon.png' | theme }}">
+  <!-- styles -->
+  
+  <link href="{{ ['/assets/sass/app.scss'] | theme }}" rel="stylesheet">
+  {% styles %}
+</head>

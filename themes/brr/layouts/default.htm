@@ -1,0 +1,27 @@
+description = "Default layout"
+==
+<!DOCTYPE html>
+<html lang="en">
+    {% partial 'head' %}
+
+    <body class="layout-{{ this.layout.id }} page-{{ this.page.id }}">
+      <!-- <main role="main"> -->
+        <div class="global-header">
+            {% partial 'header' %}
+        </div>
+        <div class="global-page">
+            {% page %}
+        </div>
+        
+        <!-- Pre Footer (Green Bar) -->
+        {% partial "green-bar" %}
+        <!-- /Pre Footer -->
+    
+        <div class="global-footer">
+            {% partial 'footer' %}
+        </div>
+
+        {% partial 'scripts' %}
+      <!-- </main> -->
+    </body>
+</html>

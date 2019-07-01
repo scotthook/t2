@@ -1,0 +1,104 @@
+1561708455a:1:{s:18:"contact-header.htm";a:6:{s:8:"fileName";s:18:"contact-header.htm";s:7:"content";s:1854:"[genericForm]
+messages_success = "Your form was successfully submitted"
+messages_errors = "There were errors with your submission"
+mail_enabled = 1
+mail_subject = "Contact Us | Message"
+mail_recipients[] = "andrew.pe@gmail.com"
+reset_form = 1
+inline_errors = "disabled"
+sanitize_data = "disabled"
+anonymize_ip = "disabled"
+recaptcha_theme = "light"
+recaptcha_type = "image"
+recaptcha_size = "normal"
+skip_database = 1
+==
+<!-- Body Content -->
+	<main role="main"> <!-- Header -->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-6 hideOver box1 formHeader contactBannerNew"></div>
+			<div class="col-lg-6 hideOver formBox2 blueBoxContent formBox">
+				<h1>Contact Turnkey Office Solutions</h1>
+				
+				<div class="contactForm">
+                    <form data-request="{{ genericForm }}::onFormSubmit">
+
+    {{ form_token() }}
+
+    <div id="{{ genericForm }}_forms_flash"></div>
+    <input type="hidden" name="campaign" value="contact-us" />
+    <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label for="comments">Comments:</label><br/>
+        <textarea id="comments" name="comments" rows="8" cols="80"></textarea>
+    </div>
+     <button id="simpleContactSubmitButton" type="submit" class="btn btn-default">Submit</button>
+
+</form>
+                
+                </div>
+				
+				
+			</div>
+		</div>
+	</div>
+	<!-- /Header -->";s:5:"mtime";i:1561707852;s:6:"markup";s:1433:"<!-- Body Content -->
+	<main role="main"> <!-- Header -->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-6 hideOver box1 formHeader contactBannerNew"></div>
+			<div class="col-lg-6 hideOver formBox2 blueBoxContent formBox">
+				<h1>Contact Turnkey Office Solutions</h1>
+				
+				<div class="contactForm">
+                    <form data-request="{{ genericForm }}::onFormSubmit">
+
+    {{ form_token() }}
+
+    <div id="{{ genericForm }}_forms_flash"></div>
+    <input type="hidden" name="campaign" value="contact-us" />
+    <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label for="comments">Comments:</label><br/>
+        <textarea id="comments" name="comments" rows="8" cols="80"></textarea>
+    </div>
+     <button id="simpleContactSubmitButton" type="submit" class="btn btn-default">Submit</button>
+
+</form>
+                
+                </div>
+				
+				
+			</div>
+		</div>
+	</div>
+	<!-- /Header -->";s:4:"code";N;s:11:"genericForm";a:13:{s:16:"messages_success";s:36:"Your form was successfully submitted";s:15:"messages_errors";s:38:"There were errors with your submission";s:12:"mail_enabled";s:1:"1";s:12:"mail_subject";s:20:"Contact Us | Message";s:15:"mail_recipients";a:1:{i:0;s:19:"andrew.pe@gmail.com";}s:10:"reset_form";s:1:"1";s:13:"inline_errors";s:8:"disabled";s:13:"sanitize_data";s:8:"disabled";s:12:"anonymize_ip";s:8:"disabled";s:15:"recaptcha_theme";s:5:"light";s:14:"recaptcha_type";s:5:"image";s:14:"recaptcha_size";s:6:"normal";s:13:"skip_database";s:1:"1";}}}

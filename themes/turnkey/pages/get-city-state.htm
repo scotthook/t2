@@ -1,0 +1,17 @@
+title = "Get-City-State"
+url = "/get-city-state/:zip"
+is_hidden = 0
+==
+<?php
+function getCityState($zip){
+    $data = Db::table('zipBase')->where('zip', $zip)->first();
+    header('Content-Type: application/json');
+    echo json_encode($data);
+}
+
+function onStart(){
+     $this['zip'] = $this->getCityState($this->param('zip'));   
+     
+}
+?>
+==

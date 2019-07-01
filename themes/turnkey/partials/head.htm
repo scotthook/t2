@@ -1,0 +1,35 @@
+==
+<head>
+  <meta charset="utf-8">
+  <title>{% if this.page.meta_title %}{{ this.page.meta_title }}{% else %}{{ this.theme.config.title }}{% endif %}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{% if this.page.meta_description %}{{ this.page.meta_description }}{% else %}{{ this.theme.config.description }}{% endif %}">
+  <meta name="keywords" content="{% if this.page.keywords %}{{ this.page.keywords }}{% else %}{{ this.theme.meta_keywords }}{% endif %}">
+  <meta name="title" content="{% if this.page.meta_title %}{{ this.page.meta_title }}{% else %}{{ this.theme.config.title }}{% endif %}">
+
+  <!-- structured data -->
+
+  <!-- Google Tag Manager -->
+  <!-- End Google Tag Manager -->
+  
+  
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <!-- Fonts -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+
+  <!-- Fancy Animations -->
+  <link rel="stylesheet" href="//unpkg.com/aos@next/dist/aos.css" />
+  
+  <meta property="og:url" content="http://turnkeyofficesolutions.com" />
+  <meta property="og:title" content="Office and Call Center Solutions | Turnkey Office Solutions" />
+  <meta property="og:description" content="Specializing in office equipments, business processes, VOIP telecommunications" />
+  
+  <link rel="shortcut icon" type="image/x-icon" href="{{ 'assets/images/favicons/favicon.ico' | theme }}">
+  <!-- styles -->
+  
+  <link href="{{ ['/assets/sass/app.scss'] | theme }}" rel="stylesheet">
+  <script src="//cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+  {% styles %}
+</head>

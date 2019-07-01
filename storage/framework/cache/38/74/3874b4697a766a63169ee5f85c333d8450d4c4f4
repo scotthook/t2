@@ -1,0 +1,113 @@
+1561978106a:1:{s:10:"footer.htm";a:6:{s:8:"fileName";s:10:"footer.htm";s:7:"content";s:2374:"description = "Footer navigation"
+==
+<!-- Footer -->
+    <footer class="container-fluid padMe50">
+	<div class="container">
+	    <div class="row">
+	    	<div class="col-lg-4 col-md-3">
+	    		<a class="footer-brand" href="/">
+		      		<img src="{{ 'assets/images/turnkey-logo.png' | theme }}" />
+		      	</a>
+	    	</div>
+	    	<div class="col-md-2">
+	    		<a  class="footerLinkHeader" href="#">Categories</a>
+		    	 <a href="/business-phone-systems">Business Phone Systems</a>
+	             <a href="/computer-equipment">Computer Equipment</a>
+	             <a href="/insurance">Insurance</a>
+	             <a href="/internet">Internet</a>
+	             <a href="/security">Security</a>
+	             <a href="/finance">Finance</a>
+	             <a href="/marketing">Marketing</a>
+	             <a href="/telecom-equipment">Telecom Equipment</a>
+	             <a href="/office-equipment">Office Equipment</a>
+	             <a href="/healthcare">Healthcare</a>
+	             <a href="/professional-services">Professional Services</a>
+	             <a href="/hr-personnel">HR & Personnel</a></li>
+	             <a href="/payroll-services">Payroll Services</a>
+	    	</div>
+	    	
+	    	<div class="col-md-2">
+	    		<a  class="footerLinkHeader" href="#">Partners</a>
+				<a href="http://www.dialinginnovations.com" target="_blank">Dialing Innovations</a>
+	    	</div>
+	    	
+	    	<div class="col-md-3">
+	    		<a  class="footerLinkHeader" href="/about">About Turnkey Office Solutions</a>
+	    		<br/>
+				<a  class="footerLinkHeader" href="/contact-us">Contact Us Today</a>
+				<a href="8005610580">(800) 561-0580</a>
+				<a href="mailto:support@turnkeyofficesolutions.com">support@turnkeyofficesolutions.com</a>
+	    		
+	    	</div>
+	    </div>
+    	<div class="row padMe50">
+    		<!-- Social Links -->
+			<div class="col-md-4 text-center">
+				
+			</div>
+			<div class="col-md-4 text-center">
+				
+			</div>
+			<!-- /Social Links -->
+		</div>
+		<div class="row">
+			<p class="text-center">&copy; Turnkey Office Solutions. All Rights Reserved. Turnkey Office Solutions and its logos are trademarks or registered trademarks of Turnkey Office Solutions. All other company and product names referenced herein are the property of their respective owners.</p>
+    	</div>
+    </div>  
+    </footer>
+    <!-- /Footer -->";s:5:"mtime";i:1561530053;s:6:"markup";s:2337:"<!-- Footer -->
+    <footer class="container-fluid padMe50">
+	<div class="container">
+	    <div class="row">
+	    	<div class="col-lg-4 col-md-3">
+	    		<a class="footer-brand" href="/">
+		      		<img src="{{ 'assets/images/turnkey-logo.png' | theme }}" />
+		      	</a>
+	    	</div>
+	    	<div class="col-md-2">
+	    		<a  class="footerLinkHeader" href="#">Categories</a>
+		    	 <a href="/business-phone-systems">Business Phone Systems</a>
+	             <a href="/computer-equipment">Computer Equipment</a>
+	             <a href="/insurance">Insurance</a>
+	             <a href="/internet">Internet</a>
+	             <a href="/security">Security</a>
+	             <a href="/finance">Finance</a>
+	             <a href="/marketing">Marketing</a>
+	             <a href="/telecom-equipment">Telecom Equipment</a>
+	             <a href="/office-equipment">Office Equipment</a>
+	             <a href="/healthcare">Healthcare</a>
+	             <a href="/professional-services">Professional Services</a>
+	             <a href="/hr-personnel">HR & Personnel</a></li>
+	             <a href="/payroll-services">Payroll Services</a>
+	    	</div>
+	    	
+	    	<div class="col-md-2">
+	    		<a  class="footerLinkHeader" href="#">Partners</a>
+				<a href="http://www.dialinginnovations.com" target="_blank">Dialing Innovations</a>
+	    	</div>
+	    	
+	    	<div class="col-md-3">
+	    		<a  class="footerLinkHeader" href="/about">About Turnkey Office Solutions</a>
+	    		<br/>
+				<a  class="footerLinkHeader" href="/contact-us">Contact Us Today</a>
+				<a href="8005610580">(800) 561-0580</a>
+				<a href="mailto:support@turnkeyofficesolutions.com">support@turnkeyofficesolutions.com</a>
+	    		
+	    	</div>
+	    </div>
+    	<div class="row padMe50">
+    		<!-- Social Links -->
+			<div class="col-md-4 text-center">
+				
+			</div>
+			<div class="col-md-4 text-center">
+				
+			</div>
+			<!-- /Social Links -->
+		</div>
+		<div class="row">
+			<p class="text-center">&copy; Turnkey Office Solutions. All Rights Reserved. Turnkey Office Solutions and its logos are trademarks or registered trademarks of Turnkey Office Solutions. All other company and product names referenced herein are the property of their respective owners.</p>
+    	</div>
+    </div>  
+    </footer>
+    <!-- /Footer -->";s:4:"code";N;s:11:"description";s:17:"Footer navigation";}}

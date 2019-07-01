@@ -1,0 +1,179 @@
+title = "testform"
+url = "/testform"
+layout = "form-template"
+description = "test"
+is_hidden = 0
+
+[testForm]
+messages_success = "Your form was successfully submitted"
+messages_errors = "There were errors with your submission"
+mail_enabled = 1
+mail_subject = "Test Campaign"
+mail_recipients[] = "andrew.pe@gmail.com"
+mail_replyto = "support@turnkeyofficesolutions.com"
+inline_errors = "disabled"
+sanitize_data = "disabled"
+anonymize_ip = "disabled"
+recaptcha_theme = "light"
+recaptcha_type = "image"
+recaptcha_size = "normal"
+==
+<!-- Body Content -->
+	<main role="main"> <!-- Header -->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-12 hideOver formBox2 blueBoxContent formBox">
+				<h1>Contact Turnkey Office Solutions</h1>
+			<link href="{{ 'assets/css/smart_wizard.min.css' | theme }}" rel="stylesheet">
+  
+<form id="myForm" data-request="{{ testForm }}::onFormSubmit" role="form" data-toggle="validator" method="post" accept-charset="utf-8">
+
+    {{ form_token() }}
+
+    <div id="{{ testForm }}_forms_flash"></div>
+
+    <!-- SmartWizard html -->
+        <div id="smartwizard">
+            <ul class="d-none">
+                <li><a href="#step-1">Step 1<br /><small>Email Address</small></a></li>
+                <li><a href="#step-2">Step 2<br /><small>Name</small></a></li>
+                <li><a href="#step-3">Step 3<br /><small>Address</small></a></li>
+                <li><a href="#step-4">Step 4<br /><small>Terms and Conditions</small></a></li>
+            </ul>
+
+            <div>
+                <div id="step-1">
+                    <div id="form-step-0" role="form" data-toggle="validator">
+                    	<input type="hidden" name="campaign" value="finance" />
+                        <div class="form-group">
+                            <label for="email">Email address:</label>
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Write your email address" required>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="step-2">
+                    <div id="form-step-1" role="form" data-toggle="validator">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" class="form-control" name="name" id="email" placeholder="Write your name" required>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="step-3">
+                    <div id="form-step-2" role="form" data-toggle="validator">
+                        <div class="form-group">
+                            <label for="address">Address</label>
+                            <textarea class="form-control" name="address" id="address" rows="3" placeholder="Write your address..." required></textarea>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="step-4" class="">
+                    <p>
+                        Terms and conditions: Keep your smile :)
+                    </p>
+                    <div id="form-step-3" role="form" data-toggle="validator">
+                        <div class="form-group">
+                            <label for="terms">I agree with the T&C</label>
+                            <input type="checkbox" id="terms" data-error="Please accept the Terms and Conditions" required>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+ <br/>
+    <div class="form-group">
+        {% partial '@recaptcha' %}
+    </div>
+
+<button id="simpleContactSubmitButton" type="submit" class="btn btn-default d-none">Submit</button>
+
+</form>
+ <!-- Include jQuery -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include jQuery Validator plugin -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.5/validator.min.js"></script>
+<script src="{{ 'assets/js/jquery.smartWizard.min.js' | theme }}"></script>
+<script type="text/javascript">
+        $(document).ready(function(){
+
+            // Toolbar extra buttons
+            var btnFinish = $('<button id="btn-finish"></button>').text('Submit')
+                                             .addClass('btn btn-info d-none')
+                                             .on('click', function(){
+                                                    if( !$(this).hasClass('disabled')){
+                                                        var elmForm = $("#myForm");
+                                                        if(elmForm){
+                                                            elmForm.validator('validate');
+                                                            var elmErr = elmForm.find('.has-error');
+                                                            if(elmErr && elmErr.length > 0){
+                                                                return false;
+                                                            }else{
+                                                            	$('#simpleContactSubmitButton').click();
+                                                                return false;
+                                                            }
+                                                        }
+                                                    }
+                                                });
+            
+
+
+
+            // Smart Wizard
+            $('#smartwizard').smartWizard({
+                    selected: 0,
+                    theme: 'arrows',
+                    transitionEffect:'fade',
+                    toolbarSettings: {toolbarPosition: 'bottom',
+                                      toolbarExtraButtons: [btnFinish]
+                                    },
+                    anchorSettings: {
+                                markDoneStep: true, // add done css
+                                markAllPreviousStepsAsDone: true, // When a step selected by url hash, all previous steps are marked done
+                                removeDoneStepOnNavigateBack: true, // While navigate back done step after active step will be cleared
+                                enableAnchorOnDoneStep: true // Enable/Disable the done steps navigation
+                            }
+                 });
+
+            $("#smartwizard").on("leaveStep", function(e, anchorObject, stepNumber, stepDirection) {
+                var elmForm = $("#form-step-" + stepNumber);
+                // stepDirection === 'forward' :- this condition allows to do the form validation
+                // only on forward navigation, that makes easy navigation on backwards still do the validation when going next
+                if(stepDirection === 'forward' && elmForm){
+                    elmForm.validator('validate');
+                    var elmErr = elmForm.children('.has-error');
+                    if(elmErr && elmErr.length > 0){
+                        // Form validation failed
+                        return false;
+                    }
+                }
+                return true;
+            });
+
+            $("#smartwizard").on("showStep", function(e, anchorObject, stepNumber, stepDirection) {
+                // Enable finish button only on last step
+                
+                if(stepNumber == 3){
+                	$('.sw-btn-prev').addClass('d-none');
+                    $('.sw-btn-next').addClass('d-none');
+                    $('#btn-finish').removeClass('disabled');
+                    $('#btn-finish').removeClass('d-none');
+                }
+            });
+
+        });
+    </script>
+				
+			</div>
+		</div>
+	</div>
+	<!-- /Header -->
+		<div class="container-fluid contentSections mt-5">
+							
+		</div>

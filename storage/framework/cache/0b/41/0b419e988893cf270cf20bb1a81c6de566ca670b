@@ -1,0 +1,26 @@
+1561978106a:1:{s:18:"get-city-state.htm";a:8:{s:8:"fileName";s:18:"get-city-state.htm";s:7:"content";s:354:"title = "Get-City-State"
+url = "/get-city-state/:zip"
+is_hidden = 0
+==
+<?php
+function getCityState($zip){
+    $data = Db::table('zipBase')->where('zip', $zip)->first();
+    header('Content-Type: application/json');
+    echo json_encode($data);
+}
+
+function onStart(){
+     $this['zip'] = $this->getCityState($this->param('zip'));   
+     
+}
+?>
+==";s:5:"mtime";i:1561717505;s:6:"markup";s:0:"";s:4:"code";s:271:"function getCityState($zip){
+    $data = Db::table('zipBase')->where('zip', $zip)->first();
+    header('Content-Type: application/json');
+    echo json_encode($data);
+}
+
+function onStart(){
+     $this['zip'] = $this->getCityState($this->param('zip'));   
+     
+}";s:5:"title";s:14:"Get-City-State";s:3:"url";s:20:"/get-city-state/:zip";s:9:"is_hidden";s:1:"0";}}

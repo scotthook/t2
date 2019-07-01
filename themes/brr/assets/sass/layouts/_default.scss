@@ -1,0 +1,36 @@
+// -------------------------- COMMON --------------------------------------------------
+
+.left {
+  float: left;
+}
+
+.container {
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+}
+
+.row-inset {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.content {
+  > div {
+    margin-bottom: 40px;
+    clear: both;
+
+    &:after {
+      content: "";
+      clear: both;
+      display: block;
+    }
+  }
+}
+
+select:-moz-focusring {
+  outline: none;
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}

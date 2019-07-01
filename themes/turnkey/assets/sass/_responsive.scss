@@ -1,0 +1,582 @@
+/* Extra Small devices */
+@media (max-width: 575px) { 
+	
+	.headerShape{
+		padding: 55px 0 0 20px;
+	}
+	
+	h2{
+		font-size:34px;
+	}
+	
+	.h3, h3{
+	     font-size:1.3rem;   
+	}
+	
+	.box1{
+		background:url(#{$imagePath}/new-home.jpg) no-repeat -166px;
+		height:280px;
+	}
+	
+	.formHeader{
+		background-size:cover !important;
+		background:url(#{$imagePath}/new-home.jpg) no-repeat -160px -150px !important;
+	}
+	
+	.box2{
+		height:280px;
+	}
+	
+	.formBox{
+		height:auto;
+		padding: 50px 40px;
+	}
+	
+	.formBox .padMe15{
+		padding:0 0;
+	}
+	
+	.formBox input{
+		    margin: 8px 8px 8px -8px;
+	}
+	
+	.boxImage{
+		min-height:300px;
+	}
+	
+	/* navigation */
+	nav{
+		padding: 15px 18px !important;
+	}
+	
+	.navbar-brand img {
+	    max-width: 150px;
+	}
+	
+	.greenCall{
+		display: block;
+    	margin: 0 auto;
+	}
+	
+	.navbar-nav{
+		width:100%;
+	}
+	
+    .boxContent{
+         padding:20px 20px;   
+    }
+	
+	/* /navigation */
+	
+	main {
+	    margin-top: 84px;
+	}
+	
+	.headerShape:before{
+		height:200px;
+		margin-top:-15px;
+		width:80%;
+	}
+	
+	.underlineBtn{
+		margin-top:15px;
+	}
+	
+	.order-xs-1 {
+    	-ms-flex-order: 1;
+    	order: 1;
+	}
+	
+	.order-xs-2 {
+	    -ms-flex-order: 2;
+	    order: 2;
+	}
+	
+	.heroImage h1{
+		font-size:45px;
+	}
+		
+	.heroImage{
+		height:400px;
+		background-position-x: -1180px;
+    	background-position-y: -200px;
+	}
+	
+	.homeRefiHero{
+	     background-position:-1000px -400px;
+	}
+	
+	.reverseMtgHero{
+	    background-position-x: -1499px;
+        background-position-y: -1354px;   
+	}
+	
+	.personalLoan{
+	    background-position-x: -4167px;
+	}
+	
+	.personalLeads{
+	     background-position: -734px -200px;
+	}
+	
+	.mortgage-personal-loan-leads-bg{
+	     background-position: -1350px -96px;   
+	}
+	
+	.mortgage-personal-loan-leads-bg{
+        background-position: -1536px -96px;
+	}
+	
+	.marketing-scripts-bg{
+	    background-position: -1188px 5px;
+	}
+	
+	.multichannel-marketing-campaigns-bg{
+	    background-position: -680px -200px;   
+	}
+	
+	.performance-marketing-technology-bg{
+	    background-position: -897px -395px;
+	}
+	
+	.fha-mortgage-loan-leads-bg{
+	     background-position: -1727px -162px;
+	}
+	
+	.conventional-mortgage-loan-leads-bg{
+	     background-position: -1455px 0;   
+	}
+	
+	.usda-mortgage-loan-leads-bg{
+	    background-position: -1668px -200px;
+	}    
+	
+	.our-team-bg{
+	     background-position: -957px -160px;   
+	}
+	
+	.va-mortgage-loan-leads-bg{
+	     background-position: -1473px -383px;
+
+	}
+	
+	.heloc-cashout-refinance-leads-bg{
+	     padding-top:35px;   
+	}
+	
+	.box1{
+		border-right:none;
+	}
+	
+	.box2,
+	.formBox2{
+		border-left:none;
+	}
+	
+	.headerBtn {
+        font-size: 1.4rem;
+    }
+    
+   	.newsroomForm input,
+   	.scriptsForm input{
+         padding: 10px !important;   
+    }
+	
+	.padMe50{
+        padding:25px 20px;   
+	}
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) { 
+	.headerShape:before{
+		width:80%;
+		height:200px;
+		margin-top:-15px;
+	}
+	
+	.headerShape{
+		padding: 55px 0 0 20px;
+	}
+	
+	h2{
+		font-size:60px;
+	}
+	
+	.h3, h3{
+	     font-size:1.5rem;   
+	}
+	
+	.headerBtn {
+        font-size: 1.4rem;
+    }
+	
+	.box1{
+		background:url(#{$imagePath}/new-home.jpg) no-repeat -166px;
+		height:280px;
+	}
+	
+	.formHeader{
+		background:url(#{$imagePath}/new-home.jpg) no-repeat left top !important;
+		background-size:cover !important;
+	}
+	
+	.box2{
+		height:280px;
+	}
+	
+	.formBox{
+		height:auto;
+		padding: 50px 40px;
+	}
+	
+	.formBox .padMe15{
+		padding:0 0;
+	}
+	
+	.formBox input{
+		margin:8px 0;
+	}
+	
+	.boxImage{
+		min-height:300px;
+	}
+	
+	.boxContent{
+		padding:20px 20px;
+	}
+	
+	/* navigation */
+	nav{
+		padding:10px 2px !important;
+	}
+	
+	.greenCall{
+		display: block;
+    	margin: 0 auto;
+	}
+	
+	.navbar-nav{
+		width:100%;
+	}
+	
+	.boxContent{
+         padding:20px 20px;   
+    }
+	
+	/* /navigation */
+	
+	main {
+	    margin-top: 110px;
+	}
+	
+	.heroImage{
+		background-position-x: -1000px;
+    	background-position-y: -150px;
+	}
+	
+	.box1{
+		border-right:none;
+	}
+	
+	.box2,
+	.formBox2{
+		border-left:none;
+	}
+	
+	.heloc-cashout-refinance-leads-bg{
+	     padding-top:35px;   
+	}
+	
+	
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width:991.9px) {
+	.headerShape:before{
+		width:90%;
+	}
+	
+	.headerShape{
+		padding: 250px 0 0 40px;
+	}
+	
+	h2{
+		font-size:40px;
+	}
+	
+	.box1{
+		background:url(#{$imagePath}/new-home.jpg) no-repeat -166px top;
+		background-size:cover;
+	}
+	
+	.formHeader{
+		background-size:cover !important;
+		background:url(#{$imagePath}/new-home.jpg) !important;
+		height:350px;
+	}
+	
+	.formHeader.box1{
+		border-right:none;
+	}
+	
+	.blueBoxContent.box2,
+	.formBox2{
+		border-left:none;
+	}
+	
+	.heroImage{
+		background-position: -765px -96px;
+	}
+	
+	footer a{
+		font-size:11px;
+	}
+	
+	.boxContent{
+         padding:20px 20px;   
+    }
+	
+	/* navigation */
+	nav{
+		padding:.5rem 1rem !important;
+	}
+	
+	.greenCall{
+		display: block;
+    	margin: 0 auto;
+	}
+	
+	.navbar-nav{
+		width:100%;
+	}
+	
+	/* /navigation */
+	
+	.reverseMtgHero{
+	    background-position: -1065px -96px; 
+	}
+	
+	.personalLoan{
+	    background-position: -1235px -100px;   
+	}
+	
+	.personalLeads{
+	     background-position: -450px -96px;   
+	}
+	
+	.mortgage-personal-loan-leads-bg{
+	     background-position: -1350px -96px;
+	}
+	
+	.performance-marketing-technology-bg{
+        background-position: -866px -326px;
+	}
+	
+	.fha-mortgage-loan-leads-bg{
+	     background-position: -1408px -96px;
+	}
+	
+	.heloc-cashout-refinance-leads-bg{
+	     padding-top:35px;   
+	}
+	
+	.va-mortgage-loan-leads-bg{
+        background-position: -1241px -323px;
+
+	}
+	    
+}
+
+/* Large devices (desktops, 992px to 1200px) */
+@media (min-width: 992px) and (max-width:1199.9px) {
+	.headerShape:before{
+		width:80%;
+	}
+	
+	h2{
+		font-size:40px;
+	}
+	
+	.box1{
+		background:url(#{$imagePath}/new-home.jpg) no-repeat left top;
+		background-size:cover;
+	}
+	.heroImage{
+		background-position: -682px -96px;
+	}
+	
+	.box1{
+        height:auto;   
+	}
+	
+	.formBox2{
+	    padding:50px;
+	    
+	    h1{
+	        font-size:2rem;   
+	    }
+	    
+	    .contactForm input{
+	         max-width:100% !important;
+	         padding: 2.5% 3% !important;
+	    }
+	    
+	    #firstname-d9eac60d-9a3c-4501-b840-01b06a99ae7c,
+	    #firstname-3c0b32ec-8936-406b-808e-af2a0d440531,
+	    #firstname-a1351d9e-e1ea-48e6-9680-d2bbce9e3197{
+	        width:95% !important;    
+        }
+        
+        #lastname-d9eac60d-9a3c-4501-b840-01b06a99ae7c,
+        #lastname-3c0b32ec-8936-406b-808e-af2a0d440531,
+        #lastname-a1351d9e-e1ea-48e6-9680-d2bbce9e3197{
+            width:96% !important;
+            padding-left:7% !important;
+        }
+	}    
+	
+	/* navigation */
+	nav{
+		padding:10px 2px !important;
+	}
+	
+	.greenCall{
+		display: block;
+    	margin: 0 auto;
+	}
+	
+	.navbar-nav{
+		width:100%;
+	}
+	
+	/* /navigation */
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width:1599.9px) {
+	.headerShape:before{
+		width:84%;
+	}
+}
+
+/* header fixes */
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 2000px) {
+	.headerShape:before{
+		width:50%;
+	}
+	
+	.mortgage-personal-loan-leads{
+        background:url(#{$imagePath}/mortgage-personal-loan-leads-2.jpg) no-repeat center;    
+    }  
+    
+    .multichannel-marketing-campaigns,
+    .marketing-scripts{
+         background-position-y:-150px;   
+    }
+    
+    .live-agent-transfers{
+         background-position-y: -420px;   
+    }
+    
+    .page-mortgage-marketing .mm1{
+         background-position-y:-150px;   
+    }
+    
+    .page-mortgage-marketing .mm3{
+         background-position-y:-30px;   
+    }
+    
+    .page-mortgage-marketing .mm5{
+         background-position-y:-150px;   
+    }
+}
+
+@media (min-width: 1600px) and (max-width:2000px) {
+	.headerShape:before{
+		width:60%;
+	}
+}
+
+@media (max-width:1199.9px) {
+	.boxImage{
+		background-size:cover !important;
+	}
+	.boxImage:hover{
+		background-size:cover !important;
+	}
+	.hamburgerMenu{
+         margin:0 auto;   
+    }
+    nav li {
+        margin-right: 0;
+    }
+    .navbar .container-fluid{
+         padding-left:30px;
+         padding-right:30px;
+    }
+    
+    main {
+        margin-top: 100px;
+    }
+}
+
+@media (min-width: 1600px){
+	.boxContent{
+		padding: 20px 100px;
+	}
+	.loan-advisor{
+    	background-position-y: -124px;
+	}
+}
+
+@media (max-width: 1500px){
+    .boxImage,
+    .boxImage:hover{
+		background-size:cover !important;
+	}
+}
+
+@media (max-width:768px){
+    .newsroomForm input,
+    .scriptsForm input{
+         padding: 10px !important;   
+    }
+}
+
+@media (max-width:1199.9px) and (min-width:768){
+     .boxContent{
+         padding:0 20px;   
+    }   
+}
+
+@media (min-width:481px) and (max-width:991px){
+    .contactForm input, 
+    .newsroomForm input,
+    .scriptsForm input{
+        width:95% !important;
+        max-width:95% !important;
+    }
+    #firstname-d9eac60d-9a3c-4501-b840-01b06a99ae7c,
+    #firstname-3c0b32ec-8936-406b-808e-af2a0d440531,
+    #firstname-a1351d9e-e1ea-48e6-9680-d2bbce9e3197{
+        padding:2.5% 3% !important;    
+    }
+    
+    #lastname-d9eac60d-9a3c-4501-b840-01b06a99ae7c,
+    #lastname-3c0b32ec-8936-406b-808e-af2a0d440531,
+    #lastname-a1351d9e-e1ea-48e6-9680-d2bbce9e3197{
+        padding:2.5% !important;
+    }
+}
+
+@media (min-width:1200px) and (max-width:2000px){
+	.heroImage{
+		background-position-x: -575px;
+	}
+}
+
+
+

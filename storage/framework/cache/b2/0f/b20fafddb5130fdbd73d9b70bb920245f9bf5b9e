@@ -1,0 +1,87 @@
+1561978106a:1:{s:10:"header.htm";a:6:{s:8:"fileName";s:10:"header.htm";s:7:"content";s:2348:"description = "Navigation"
+==
+<!-- Navigation -->
+	
+    <nav class="navbar navbar-expand-xl fixed-top navbar-light">
+    <div class="container-fluid contentSections">
+	      <a class="navbar-brand" href="/">
+	      	<img src="{{ 'assets/images/turnkey-logo.png' | theme }}" />
+	      </a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="navbar-toggler-icon"></span>
+	      </button>
+	      
+	      <div class="collapse navbar-collapse nav justify-content-end" id="navbarsExampleDefault">
+	        <ul class="navbar-nav">
+	          <li class="nav-item dropdown">
+	            <a class="nav-link dropdown-toggle" href="/categories" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">CATEGORIES</a>
+	            <ul class="dropdown-menu" aria-labelledby="dropdown01">
+	              {% partial 'category-menu' %}
+	            </ul>
+	          </li>
+	          
+	          <li class="nav-item dropdown">
+	            <a class="nav-link dropdown-toggle" href="/partners" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PARTNERS</a>
+	            <ul class="dropdown-menu" aria-labelledby="dropdown02">
+                    <li><a class="dropdown-item" href="http://www.dialinginnovations.com" target="_blank">Dialing Innovations</a></li>
+	            </ul>
+	          </li>  
+    	      <li class="nav-item dropdown hamburgerMenu">
+	            <a class="nav-link dropdown-toggle hamburgerIcon" href="/loan-marketing-products" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="https://mdbootstrap.com/img/svg/hamburger4.svg?color=666" /></a>
+	            <ul class="dropdown-menu" aria-labelledby="dropdown03">
+	                <li><a class="dropdown-item" href="/about">About Us</a></li>
+	                <li><a class="dropdown-item" href="/contact-us">Contact Us</a></li>
+	            </ul>
+	          </li>  
+	          
+	          <span class="navbar-text navPhone">
+                <a href="8005610580">(800) 561-0580</a>
+              </span>
+	        </ul>
+
+	      </div>
+      </div>
+    </nav>
+    <!-- /Navigation -->";s:5:"mtime";i:1561530000;s:6:"markup";s:2318:"<!-- Navigation -->
+	
+    <nav class="navbar navbar-expand-xl fixed-top navbar-light">
+    <div class="container-fluid contentSections">
+	      <a class="navbar-brand" href="/">
+	      	<img src="{{ 'assets/images/turnkey-logo.png' | theme }}" />
+	      </a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="navbar-toggler-icon"></span>
+	      </button>
+	      
+	      <div class="collapse navbar-collapse nav justify-content-end" id="navbarsExampleDefault">
+	        <ul class="navbar-nav">
+	          <li class="nav-item dropdown">
+	            <a class="nav-link dropdown-toggle" href="/categories" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">CATEGORIES</a>
+	            <ul class="dropdown-menu" aria-labelledby="dropdown01">
+	              {% partial 'category-menu' %}
+	            </ul>
+	          </li>
+	          
+	          <li class="nav-item dropdown">
+	            <a class="nav-link dropdown-toggle" href="/partners" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PARTNERS</a>
+	            <ul class="dropdown-menu" aria-labelledby="dropdown02">
+                    <li><a class="dropdown-item" href="http://www.dialinginnovations.com" target="_blank">Dialing Innovations</a></li>
+	            </ul>
+	          </li>  
+    	      <li class="nav-item dropdown hamburgerMenu">
+	            <a class="nav-link dropdown-toggle hamburgerIcon" href="/loan-marketing-products" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="https://mdbootstrap.com/img/svg/hamburger4.svg?color=666" /></a>
+	            <ul class="dropdown-menu" aria-labelledby="dropdown03">
+	                <li><a class="dropdown-item" href="/about">About Us</a></li>
+	                <li><a class="dropdown-item" href="/contact-us">Contact Us</a></li>
+	            </ul>
+	          </li>  
+	          
+	          <span class="navbar-text navPhone">
+                <a href="8005610580">(800) 561-0580</a>
+              </span>
+	        </ul>
+
+	      </div>
+      </div>
+    </nav>
+    <!-- /Navigation -->";s:4:"code";N;s:11:"description";s:10:"Navigation";}}

@@ -1,0 +1,50 @@
+title = "search-results"
+url = "/search-results"
+layout = "default"
+is_hidden = 0
+
+[searchResults]
+apikey = "AIzaSyCNIVolqmOETUxds3ufVL42jmmen5Dct6A"
+cx = "013669666235286008422:rvji_15plq4"
+resultPerPage = 10
+sendReferer = 1
+==
+<!-- Body Content -->
+    <main role="main">
+      <!-- Main Content -->
+      	<div class="container-fluid contentSections template3">
+      		<div class="row padMe100">
+      		    
+      			<div class="col-md-12">
+      			<h1>{{ totalResults }} Results for {{search}}</h1>
+                {% if results %}
+                <ul>
+                    {% for result in results %}
+                    <li>
+                        <h3><a href="{{ result.link }}">{{ result.htmlTitle|raw }}</a></h3>
+                        {{ result.htmlSnippet|raw }}
+                    </li>
+                    {% endfor %}
+                </ul>
+                {{ results.render|raw }}
+                {% else %}
+                
+                No Results
+                
+                {% endif %}
+               
+                
+      			</div>
+      			<div class="col-md-12 padMe100">
+      				<h3>Our turnkey office and call center solutions are pre-built and good to go applications as soon as they are positioned within your business processes</h3>
+      				<h3>Placing turnkey solutions in your office and call center enhances your business functions more effectively. They improve customer experiences and ensure continuous value and faster returns on investment.</h3>
+      				<a class="btn btn-primary btn-lg greenBtn headerBtn" href="/contact-us">Request a Free Consultation</a>
+      				<p>Or call <a href="18005610580">1 (800) 561-0580</a>
+      			</div>
+      		</div>
+			
+		</div>
+      <!-- /Main Content -->
+
+    </main>
+    <!-- /Body Content -->

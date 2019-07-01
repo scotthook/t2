@@ -1,0 +1,11 @@
+plugin:
+    name: 'andrewpe.crm::lang.plugin.name'
+    description: 'andrewpe.crm::lang.plugin.description'
+    author: 'Andrew Pe'
+    icon: oc-icon-cube
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Campaigns
+        url: andrewpe/crm/campaigns
+        icon: icon-cube

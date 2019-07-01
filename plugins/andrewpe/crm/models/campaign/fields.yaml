@@ -1,0 +1,16 @@
+fields:
+    name:
+        label: Name
+        span: full
+        required: 1
+        type: text
+    description:
+        label: Description
+        size: ''
+        span: full
+        type: richeditor
+    page_url:
+        label: URL
+        span: full
+        required: 1
+        type: text
