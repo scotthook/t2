@@ -1,7 +1,7 @@
-title = "business-phone-systems"
-url = "/business-phone-systems"
+title = "Marketing"
+url = "/marketing"
 layout = "form-template"
-meta_title = "Business Phone Systems"
+meta_title = "Marketing"
 is_hidden = 0
 
 [testForm]
@@ -51,51 +51,107 @@ recaptcha_size = "normal"
                 <li><a href="#step-5">Step 5<br /><small></small></a></li>
                 <li><a href="#step-6">Step 6<br /><small></small></a></li>
                 <li><a href="#step-7">Step 7<br /><small></small></a></li>
+                <li><a href="#step-8">Step 8<br /><small></small></a></li>
+                <li><a href="#step-9">Step 9<br /><small></small></a></li>
             </ul>
 
             <div>
                 <div id="step-1">
                     <div id="form-step-0" role="form" data-toggle="validator">
-                    	<input type="hidden" name="campaign" value="business-phone-systems" />
+                    	<input type="hidden" name="campaign" value="marketing" />
                         <div class="form-group">
                         <br/>
                         <div class="help-block with-errors hidden-errors"></div>
-                            <label for="phone_system_needs">Which best describes your phone system needs?</label><br/>
-                                  <button class='btn btn-lg radio-btn custom-question-1' data-desc="Installing new phone system"><i class="fa fa-phone-square q-icon-format"></i> Installing new phone system </button>
-                                  <button class='btn btn-lg radio-btn custom-question-1' data-desc="Replacing existing phone system"><i class="fa fa-phone-square q-icon-format"></i> Replacing existing phone system </button>
-                                  <button class='btn btn-lg radio-btn custom-question-1' data-desc="Expanding existing phone system"><i class="fa fa-phone-square q-icon-format"></i> Expanding existing phone system </button>
-                                  <input type="hidden" id="phone_system_needs"  name="phone_system_needs" value="" required />
-                            
+                            <label for="type-of-service">Which type of service are you looking for? </label><br/>
+                          <button class='btn btn-lg radio-btn custom-question-1' data-desc="Inbound Call Center Services"><i class="fa fa-question q-icon-format"></i> Inbound Call Center Services  </button>
+                          <button class='btn btn-lg radio-btn custom-question-1' data-desc="Outbound Telemarketing Services"><i class="fa fa-question q-icon-format"></i> Outbound Telemarketing Services  </button>
+                          <input type="hidden" id="type-of-service"  name="type-of-service" value="" required />
                         </div>
                     </div>
-
                 </div>
+                
                 <div id="step-2">
                     <div id="form-step-1" role="form" data-toggle="validator">
                         <div class="form-group">
-                            <div class="help-block with-errors"></div>
-                            <label for="Approximately-how-many-phones-do-you-need">Approximately how many phones do you need?</label>
-                            <input type="number" class="form-control" name="approximately-how-many-phones-do-you-need" id="Approximately-how-many-phones-do-you-need" placeholder="" required>
+                            <div class="help-block with-errors hidden-errors"></div>
+                            <label for="number-of-calls">Approximately how many inbound calls do you receive each month?</label><br/>
+                          <button class='btn btn-lg radio-btn custom-question-2' data-desc="Not sure"><i class="fa fa-question q-icon-format"></i> Not sure </button>
+                          <button class='btn btn-lg radio-btn custom-question-2' data-desc="1 to 499"><i class="fa fa-question q-icon-format"></i> 1 to 499 </button>
+                          <button class='btn btn-lg radio-btn custom-question-2' data-desc="500 to 1,999"><i class="fa fa-question q-icon-format"></i> 500 to 1,999 </button>
+                          <button class='btn btn-lg radio-btn custom-question-2' data-desc="2,000 to 4,999"><i class="fa fa-question q-icon-format"></i> 2,000 to 4,999 </button>
+                          <button class='btn btn-lg radio-btn custom-question-2' data-desc="5,000+"><i class="fa fa-question q-icon-format"></i> 5,000+ </button>
+                          <input type="hidden" id="number-of-calls"  name="number-of-calls" value="" required />
                             
                         </div>
                     </div>
                 </div>
+                
                 <div id="step-3">
                     <div id="form-step-2" role="form" data-toggle="validator">
                         <div class="form-group">
+                            <div class="help-block with-errors"></div>
+                            <label for="functions">What are the primary functions you need? <br/><small>(Please select all apply)</small></label>
+                            <div class="funkyradio">
+                                <div class="funkyradio-success">
+                                    <input type="checkbox" name="features" id="chbox-functions-1" value="Provide customer service/technical support" required/>
+                                    <label for="chbox-functions-1">Provide customer service/technical support </label>
+                                </div>
+                                <div class="funkyradio-success">
+                                    <input type="checkbox" name="features" id="chbox-functions-2" value="Take sales orders"  />
+                                    <label for="chbox-functions-2">Take sales orders </label>
+                                </div>
+                                <div class="funkyradio-success">
+                                    <input type="checkbox" name="features" id="chbox-functions-3" value="Schedule appointments"  />
+                                    <label for="chbox-functions-3">Schedule appointments </label>
+                                </div>
+                                <div class="funkyradio-success">
+                                    <input type="checkbox" name="features" id="chbox-functions-4" value="Qualify sales leads" />
+                                    <label for="chbox-functions-4">Qualify sales leads </label>
+                                </div>
+                                <div class="funkyradio-success">
+                                    <input type="checkbox" name="features" id="chbox-functions-5" value="Other" />
+                                    <label for="chbox-functions-5">Other</label>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="step-4">
+                    <div id="form-step-3" role="form" data-toggle="validator">
+                        <div class="form-group">
+                            <div class="help-block with-errors hidden-errors"></div>
+                            <label for="hours">What hours will you need call center coverage for?</label><br/>
+                          <button class='btn btn-lg radio-btn custom-question-3' data-desc="24-hours"><i class="fa fa-question q-icon-format"></i> 24-hours  </button>
+                          <button class='btn btn-lg radio-btn custom-question-3' data-desc="Normal business hours"><i class="fa fa-question q-icon-format"></i> Normal business hours  </button>
+                          <button class='btn btn-lg radio-btn custom-question-3' data-desc="Normal plus weekend"><i class="fa fa-question q-icon-format"></i> Normal plus weekend  </button>
+                          <button class='btn btn-lg radio-btn custom-question-3' data-desc="Other"><i class="fa fa-question q-icon-format"></i> Other </button>
+                          <input type="hidden" id="hours"  name="What-hours-will-you-need-call-center-coverage-for" value="" required />
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div id="step-5">
+                    <div id="form-step-4" role="form" data-toggle="validator">
+                        <div class="form-group">
                             <div class="help-block with-errors hidden-errors"></div>
                             <label for="When-do-you-anticipate-making-a-decision">When do you anticipate making a decision?</label>
-                            <button class='btn btn-lg radio-btn custom-question-2' data-desc="ASAP"><i class="fa fa-question-circle q-icon-format"></i> ASAP </button>
-                                  <button class='btn btn-lg radio-btn custom-question-2' data-desc="Within a few months"><i class="fa fa-question-circle q-icon-format"></i> Within a few months </button>
-                                  <button class='btn btn-lg radio-btn custom-question-2' data-desc="Between 3 and 6 months"><i class="fa fa-question-circle q-icon-format"></i> Between 3 and 6 months </button>
-                                  <button class='btn btn-lg radio-btn custom-question-2' data-desc="In more than 6 months"><i class="fa fa-question-circle q-icon-format"></i> In more than 6 months </button>
+                            <button class='btn btn-lg radio-btn custom-question-4' data-desc="ASAP"><i class="fa fa-question-circle q-icon-format"></i> ASAP </button>
+                                  <button class='btn btn-lg radio-btn custom-question-4' data-desc="In one month"><i class="fa fa-question-circle q-icon-format"></i> In one month </button>
+                                  <button class='btn btn-lg radio-btn custom-question-4' data-desc="In two months or more"><i class="fa fa-question-circle q-icon-format"></i> In two months or more </button>
                             <input type="hidden" id="decision"  name="when-do-you-anticipate-making-a-decision" value="" required />
                             
                         </div>
                     </div>
                 </div>
-                <div id="step-4">
-                    <div id="form-step-3" role="form" data-toggle="validator">
+                
+                
+                
+                <div id="step-6">
+                    <div id="form-step-5" role="form" data-toggle="validator">
                         <div class="form-group">
                             <div class="help-block with-errors hidden-errors"></div>
                             <label for="zip">What is your zip code?</label>
@@ -107,8 +163,8 @@ recaptcha_size = "normal"
                     </div>
                 </div>
                 
-                <div id="step-5">
-                    <div id="form-step-4" role="form" data-toggle="validator">
+                <div id="step-7">
+                    <div id="form-step-6" role="form" data-toggle="validator">
                         <div class="form-group">
                             <div class="help-block with-errors hidden-errors"></div>
                             <label for="email">What is your email?</label>
@@ -118,8 +174,8 @@ recaptcha_size = "normal"
                     </div>
                 </div>
                 
-                <div id="step-6">
-                    <div id="form-step-5" role="form" data-toggle="validator">
+                <div id="step-8">
+                    <div id="form-step-7" role="form" data-toggle="validator">
                         <div class="form-group">
                             <div class="help-block with-errors hidden-errors"></div>
                             <label for="first_name">First Name: </label>
@@ -162,8 +218,8 @@ recaptcha_size = "normal"
                     </div>
                 </div>
                 
-                <div id="step-7">
-                    <div id="form-step-6" role="form" data-toggle="validator">
+                <div id="step-9">
+                    <div id="form-step-8" role="form" data-toggle="validator">
                         <div class="form-group">
                              <div class="help-block with-errors hidden-errors"></div>
                             <label for="company_name">Company Name: </label>
@@ -236,6 +292,15 @@ recaptcha_size = "normal"
 <script src="{{ 'assets/js/jquery.smartWizard.min.js' | theme }}"></script>
 <script type="text/javascript">
         $(document).ready(function(){
+            function checkboxValidate(name){
+                var min = 1 //minumum number of boxes to be checked for this form-group
+                if($('input[name="'+name+'"]:checked').length<min){
+                    $('input[name="'+name+'"]').prop('required',true);
+                }
+                else{
+                    $('input[name="'+name+'"]').prop('required',false);
+                }
+            }
             // Toolbar extra buttons
             var btnFinish = $('<button id="btn-finish"></button>').text('Submit')
                                              .addClass('btn btn-info d-none')
@@ -277,14 +342,38 @@ recaptcha_size = "normal"
             $("#smartwizard").on("leaveStep", function(e, anchorObject, stepNumber, stepDirection) {
                 
                 if(stepNumber == 0) {
-                     if($('#phone_system_needs').val() == "") {
+                     if($('#type-of-service').val() == "") {
                         $(".hidden-errors").addClass('.has-error');    
                         $(".hidden-errors").text("Please provide an answer.");
-                        $('#phone_system_needs').focus();
+                        $('#type-of-service').focus();
+                        return false;
+                     }
+                }
+                if(stepNumber == 1) {
+                     if($('#number-of-calls').val() == "") {
+                        $(".hidden-errors").addClass('.has-error');    
+                        $(".hidden-errors").text("Please provide an answer.");
+                        $('#number-of-calls').focus();
                         return false;
                      }
                 }
                 if(stepNumber == 2) {
+                      if(checkboxValidate("functions")) {
+                        $(".hidden-errors").addClass('.has-error');    
+                        $(".hidden-errors").text("Please provide an answer.");
+                        $('#chbox-functions-1').focus();
+                        return false;
+                     }
+                }
+                if(stepNumber == 3) {
+                     if($('#hours').val() == "") {
+                        $(".hidden-errors").addClass('.has-error');    
+                        $(".hidden-errors").text("Please provide an answer.");
+                        $('#hours').focus();
+                        return false;
+                     }
+                }
+                if(stepNumber == 4) {
                      if($('#decision').val() == "") {
                         $(".hidden-errors").addClass('.has-error');    
                         $(".hidden-errors").text("Please provide an answer.");
@@ -293,7 +382,7 @@ recaptcha_size = "normal"
                      }
                 }
                 
-                 if(stepNumber == 3) {
+                 if(stepNumber == 5) {
                      if($('#city').val() == "") {
                         $(".hidden-errors").addClass('has-error');    
                         $(".hidden-errors").text("Please enter a valid zip code.");
@@ -302,7 +391,7 @@ recaptcha_size = "normal"
                      }
                 }
                 
-                if(stepNumber == 5) {
+                if(stepNumber == 7) {
                      if($('#first_name').val() == "") {
                         $(".hidden-errors").addClass('.has-error');    
                         $(".hidden-errors").text("Please enter your first name.");
@@ -323,32 +412,6 @@ recaptcha_size = "normal"
                      }
                 }
                 
-                if(stepNumber == 6) {
-                     if($('#company_name').val() == "") {
-                        $(".hidden-errors").addClass('.has-error');    
-                        $(".hidden-errors").text("Please enter your company name.");
-                        $('#company_name').focus();
-                        return false;
-                     }
-                     if($('#phone_number').val() == "") {
-                         $(".hidden-errors").addClass('.has-error');    
-                        $(".hidden-errors").text("Please enter your phone number.");
-                        $('#phone_number').focus();
-                        return false;
-                     }
-                     if($('#number_of_employees').val() == "") {
-                         $(".hidden-errors").addClass('.has-error');    
-                         $(".hidden-errors").text("Please choose the number of employees.");
-                         $('#number_of_employees').focus();
-                        return false;
-                     }
-                     if($('#industry').val() == "") {
-                         $(".hidden-errors").addClass('.has-error');    
-                         $(".hidden-errors").text("Please choose your industry.");
-                         $('#industry').focus();
-                        return false;
-                     }
-                }
                 
                 $(".hidden-errors").text(" ");
                 var elmForm = $("#form-step-" + stepNumber);
@@ -369,7 +432,7 @@ recaptcha_size = "normal"
 
             $("#smartwizard").on("showStep", function(e, anchorObject, stepNumber, stepDirection) {
                 // Enable finish button only on last step
-                if(stepNumber == 6){
+                if(stepNumber == 8){
                 	$('.sw-btn-prev').addClass('d-none');
                     $('.sw-btn-next').addClass('d-none');
                     $('#btn-finish').removeClass('disabled');
@@ -378,14 +441,35 @@ recaptcha_size = "normal"
             });
             $(".custom-question-1").click(function(e){
                 e.preventDefault();
-                $('#phone_system_needs').val($(this).attr('data-desc'));
+                $('#type-of-service').val($(this).attr('data-desc'));
                 $('.sw-btn-next').click();
             });
             $(".custom-question-2").click(function(e){
                 e.preventDefault();
+                $('#number-of-calls').val($(this).attr('data-desc'));
+                $('.sw-btn-next').click();
+            });
+            $(".custom-question-3").click(function(e){
+                e.preventDefault();
+                $('#hours').val($(this).attr('data-desc'));
+                $('.sw-btn-next').click();
+            });
+            $(".custom-question-4").click(function(e){
+                e.preventDefault();
                 $('#decision').val($(this).attr('data-desc'));
                 $('.sw-btn-next').click();
             });
+            $(".custom-question-6").click(function(e){
+                e.preventDefault();
+                $('#multiple-internet-lines').val($(this).attr('data-desc'));
+                $('.sw-btn-next').click();
+            });
+            $(".custom-question-5").click(function(e){
+                e.preventDefault();
+                $('#has-internet-provider').val($(this).attr('data-desc'));
+                $('.sw-btn-next').click();
+            });
+            
             $("#simpleContactSubmitButton").click(function(e){
                 e.preventDefault();
                 if($('#company_name').val() == "") {

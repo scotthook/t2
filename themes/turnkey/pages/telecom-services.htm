@@ -1,7 +1,7 @@
-title = "business-phone-systems"
-url = "/business-phone-systems"
+title = "Telecom Services"
+url = "/telecom-services"
 layout = "form-template"
-meta_title = "Business Phone Systems"
+meta_title = "Telecom Services"
 is_hidden = 0
 
 [testForm]
@@ -51,32 +51,37 @@ recaptcha_size = "normal"
                 <li><a href="#step-5">Step 5<br /><small></small></a></li>
                 <li><a href="#step-6">Step 6<br /><small></small></a></li>
                 <li><a href="#step-7">Step 7<br /><small></small></a></li>
+                <li><a href="#step-8">Step 8<br /><small></small></a></li>
+                <li><a href="#step-9">Step 9<br /><small></small></a></li>
+                <li><a href="#step-10">Step 10<br /><small></small></a></li>
+                <li><a href="#step-11">Step 11<br /><small></small></a></li>
             </ul>
 
             <div>
                 <div id="step-1">
                     <div id="form-step-0" role="form" data-toggle="validator">
-                    	<input type="hidden" name="campaign" value="business-phone-systems" />
+                    	<input type="hidden" name="campaign" value="telecom-services" />
                         <div class="form-group">
                         <br/>
                         <div class="help-block with-errors hidden-errors"></div>
-                            <label for="phone_system_needs">Which best describes your phone system needs?</label><br/>
-                                  <button class='btn btn-lg radio-btn custom-question-1' data-desc="Installing new phone system"><i class="fa fa-phone-square q-icon-format"></i> Installing new phone system </button>
-                                  <button class='btn btn-lg radio-btn custom-question-1' data-desc="Replacing existing phone system"><i class="fa fa-phone-square q-icon-format"></i> Replacing existing phone system </button>
-                                  <button class='btn btn-lg radio-btn custom-question-1' data-desc="Expanding existing phone system"><i class="fa fa-phone-square q-icon-format"></i> Expanding existing phone system </button>
-                                  <input type="hidden" id="phone_system_needs"  name="phone_system_needs" value="" required />
+                            <label for="voip_needs">Do you need this VoIP phone service primarily for residential or business use?</label><br/>
+                                  <button class='btn btn-lg radio-btn custom-question-1' data-desc="Business  "><i class="fa fa-phone-square q-icon-format"></i> Business</button>
+                                  <button class='btn btn-lg radio-btn custom-question-1' data-desc="Residential"><i class="fa fa-phone-square q-icon-format"></i> Residential </button>
+                                  <input type="hidden" id="voip_needs"  name="voip_needs" value="" required />
                             
                         </div>
                     </div>
 
                 </div>
+                
                 <div id="step-2">
                     <div id="form-step-1" role="form" data-toggle="validator">
                         <div class="form-group">
-                            <div class="help-block with-errors"></div>
-                            <label for="Approximately-how-many-phones-do-you-need">Approximately how many phones do you need?</label>
-                            <input type="number" class="form-control" name="approximately-how-many-phones-do-you-need" id="Approximately-how-many-phones-do-you-need" placeholder="" required>
-                            
+                            <div class="help-block with-errors hidden-errors"></div>
+                            <label for="internet-access">Do you currently have broadband Internet access?</label>
+                            <button class='btn btn-lg radio-btn custom-question-2' data-desc="Yes">Yes </button>
+                            <button class='btn btn-lg radio-btn custom-question-2' data-desc="No">No</button> 
+                            <input type="hidden" id="internet-access"  name="internet-access" value="" required />
                         </div>
                     </div>
                 </div>
@@ -84,18 +89,77 @@ recaptcha_size = "normal"
                     <div id="form-step-2" role="form" data-toggle="validator">
                         <div class="form-group">
                             <div class="help-block with-errors hidden-errors"></div>
-                            <label for="When-do-you-anticipate-making-a-decision">When do you anticipate making a decision?</label>
-                            <button class='btn btn-lg radio-btn custom-question-2' data-desc="ASAP"><i class="fa fa-question-circle q-icon-format"></i> ASAP </button>
-                                  <button class='btn btn-lg radio-btn custom-question-2' data-desc="Within a few months"><i class="fa fa-question-circle q-icon-format"></i> Within a few months </button>
-                                  <button class='btn btn-lg radio-btn custom-question-2' data-desc="Between 3 and 6 months"><i class="fa fa-question-circle q-icon-format"></i> Between 3 and 6 months </button>
-                                  <button class='btn btn-lg radio-btn custom-question-2' data-desc="In more than 6 months"><i class="fa fa-question-circle q-icon-format"></i> In more than 6 months </button>
-                            <input type="hidden" id="decision"  name="when-do-you-anticipate-making-a-decision" value="" required />
+                            <label for="service-starts">When are you looking to have this broadband phone service start?</label>
+                            <button class='btn btn-lg radio-btn custom-question-3' data-desc="ASAP"><i class="fa fa-question-circle q-icon-format"></i> ASAP </button>
+                                  <button class='btn btn-lg radio-btn custom-question-3' data-desc="Within a few months"><i class="fa fa-question-circle q-icon-format"></i> Within a few months </button>
+                                  <button class='btn btn-lg radio-btn custom-question-3' data-desc="Between 3 and 6 months"><i class="fa fa-question-circle q-icon-format"></i> Between 3 and 6 months </button>
+                                  <button class='btn btn-lg radio-btn custom-question-3' data-desc="In more than 6 months"><i class="fa fa-question-circle q-icon-format"></i> In more than 6 months </button>
+                            <input type="hidden" id="service-starts"  name="service-starts" value="" required />
                             
                         </div>
                     </div>
                 </div>
-                <div id="step-4">
+                
+                 <div id="step-4">
                     <div id="form-step-3" role="form" data-toggle="validator">
+                        <div class="form-group">
+                            <div class="help-block with-errors hidden-errors"></div>
+                            <label for="number-of-calls">How many calls do you need your VoIP system to handle at the same time?</label>
+                            <div class="row">
+                            <div class="col-md-6 col-sm-12">
+                            <button class='btn btn-lg radio-btn custom-question-4' data-desc="1">1 </button>
+                            <button class='btn btn-lg radio-btn custom-question-4' data-desc="2">2</button> 
+                            <button class='btn btn-lg radio-btn custom-question-4' data-desc="3">3</button> 
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                            <button class='btn btn-lg radio-btn custom-question-4' data-desc="4">4 </button>
+                            <button class='btn btn-lg radio-btn custom-question-4' data-desc="5">5</button> 
+                            <button class='btn btn-lg radio-btn custom-question-4' data-desc="6+">6+</button> 
+                            </div>
+                            <input type="hidden" id="number-of-calls"  name="number-of-calls" value="" required />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="step-5">
+                    <div id="form-step-4" role="form" data-toggle="validator">
+                        <div class="form-group">
+                            <div class="help-block with-errors hidden-errors"></div>
+                            <label for="multi-access">Do you need to connect multiple sites or offices with this VoIP phone service?</label>
+                            <button class='btn btn-lg radio-btn custom-question-5' data-desc="Yes - this service is for multiple sites or offices ">Yes - this service is for multiple sites or offices  </button>
+                            <button class='btn btn-lg radio-btn custom-question-5' data-desc="No - this service is for one site or office ">No - this service is for one site or office </button> 
+                            <button class='btn btn-lg radio-btn custom-question-5' data-desc="Not sure">Not sure</button> 
+                            <input type="hidden" id="multi-access"  name="multi-access" value="" required />
+                        </div>
+                    </div>
+                </div>
+                <div id="step-6">
+                    <div id="form-step-5" role="form" data-toggle="validator">
+                        <div class="form-group">
+                            <div class="help-block with-errors hidden-errors"></div>
+                            <label for="international-calls">Will you be using your Voice over IP Phone Service to make international calls?</label>
+                            <button class='btn btn-lg radio-btn custom-question-6' data-desc="Yes">Yes</button>
+                            <button class='btn btn-lg radio-btn custom-question-6' data-desc="No">No</button> 
+                            <input type="hidden" id="international-calls"  name="international-calls" value="" required />
+                        </div>
+                    </div>
+                </div>
+                <div id="step-7">
+                    <div id="form-step-6" role="form" data-toggle="validator">
+                        <div class="form-group">
+                            <div class="help-block with-errors hidden-errors"></div>
+                            <label for="voip-exists">Do you currently have a phone system that has VoIP capabilities?</label>
+                            <button class='btn btn-lg radio-btn custom-question-7' data-desc="Yes - we have a VoIP ready phone system ">Yes - we have a VoIP ready phone system </button>
+                            <button class='btn btn-lg radio-btn custom-question-7' data-desc="No - we do not have a VoIP ready phone system ">No - we do not have a VoIP ready phone system </button> 
+                            <button class='btn btn-lg radio-btn custom-question-7' data-desc="Not sure">Not sure</button> 
+                            <input type="hidden" id="voip-exists"  name="voip-exists" value="" required />
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div id="step-8">
+                    <div id="form-step-7" role="form" data-toggle="validator">
                         <div class="form-group">
                             <div class="help-block with-errors hidden-errors"></div>
                             <label for="zip">What is your zip code?</label>
@@ -107,8 +171,8 @@ recaptcha_size = "normal"
                     </div>
                 </div>
                 
-                <div id="step-5">
-                    <div id="form-step-4" role="form" data-toggle="validator">
+                <div id="step-9">
+                    <div id="form-step-8" role="form" data-toggle="validator">
                         <div class="form-group">
                             <div class="help-block with-errors hidden-errors"></div>
                             <label for="email">What is your email?</label>
@@ -118,8 +182,8 @@ recaptcha_size = "normal"
                     </div>
                 </div>
                 
-                <div id="step-6">
-                    <div id="form-step-5" role="form" data-toggle="validator">
+                <div id="step-10">
+                    <div id="form-step-9" role="form" data-toggle="validator">
                         <div class="form-group">
                             <div class="help-block with-errors hidden-errors"></div>
                             <label for="first_name">First Name: </label>
@@ -162,8 +226,8 @@ recaptcha_size = "normal"
                     </div>
                 </div>
                 
-                <div id="step-7">
-                    <div id="form-step-6" role="form" data-toggle="validator">
+                <div id="step-11">
+                    <div id="form-step-10" role="form" data-toggle="validator">
                         <div class="form-group">
                              <div class="help-block with-errors hidden-errors"></div>
                             <label for="company_name">Company Name: </label>
@@ -277,23 +341,63 @@ recaptcha_size = "normal"
             $("#smartwizard").on("leaveStep", function(e, anchorObject, stepNumber, stepDirection) {
                 
                 if(stepNumber == 0) {
-                     if($('#phone_system_needs').val() == "") {
+                     if($('#voip_needs').val() == "") {
                         $(".hidden-errors").addClass('.has-error');    
                         $(".hidden-errors").text("Please provide an answer.");
-                        $('#phone_system_needs').focus();
+                        $('#voip_needs').focus();
+                        return false;
+                     }
+                }
+                if(stepNumber == 1) {
+                     if($('#internet-access').val() == "") {
+                        $(".hidden-errors").addClass('.has-error');    
+                        $(".hidden-errors").text("Please provide an answer.");
+                        $('#internet-access').focus();
                         return false;
                      }
                 }
                 if(stepNumber == 2) {
-                     if($('#decision').val() == "") {
+                     if($('#service-starts').val() == "") {
                         $(".hidden-errors").addClass('.has-error');    
                         $(".hidden-errors").text("Please provide an answer.");
-                        $('#decision').focus();
+                        $('#service-starts').focus();
+                        return false;
+                     }
+                }
+                if(stepNumber == 3) {
+                     if($('#number-of-calls').val() == "") {
+                        $(".hidden-errors").addClass('.has-error');    
+                        $(".hidden-errors").text("Please provide an answer.");
+                        $('#number-of-calls').focus();
+                        return false;
+                     }
+                }
+                if(stepNumber == 4) {
+                     if($('#multi-access').val() == "") {
+                        $(".hidden-errors").addClass('.has-error');    
+                        $(".hidden-errors").text("Please provide an answer.");
+                        $('#multi-access').focus();
+                        return false;
+                     }
+                }
+                if(stepNumber == 5) {
+                     if($('#international-calls').val() == "") {
+                        $(".hidden-errors").addClass('.has-error');    
+                        $(".hidden-errors").text("Please provide an answer.");
+                        $('#international-calls').focus();
+                        return false;
+                     }
+                }
+                if(stepNumber == 6) {
+                     if($('#voip-exists').val() == "") {
+                        $(".hidden-errors").addClass('.has-error');    
+                        $(".hidden-errors").text("Please provide an answer.");
+                        $('#voip-exists').focus();
                         return false;
                      }
                 }
                 
-                 if(stepNumber == 3) {
+                 if(stepNumber == 7) {
                      if($('#city').val() == "") {
                         $(".hidden-errors").addClass('has-error');    
                         $(".hidden-errors").text("Please enter a valid zip code.");
@@ -302,7 +406,7 @@ recaptcha_size = "normal"
                      }
                 }
                 
-                if(stepNumber == 5) {
+                if(stepNumber == 9) {
                      if($('#first_name').val() == "") {
                         $(".hidden-errors").addClass('.has-error');    
                         $(".hidden-errors").text("Please enter your first name.");
@@ -323,32 +427,6 @@ recaptcha_size = "normal"
                      }
                 }
                 
-                if(stepNumber == 6) {
-                     if($('#company_name').val() == "") {
-                        $(".hidden-errors").addClass('.has-error');    
-                        $(".hidden-errors").text("Please enter your company name.");
-                        $('#company_name').focus();
-                        return false;
-                     }
-                     if($('#phone_number').val() == "") {
-                         $(".hidden-errors").addClass('.has-error');    
-                        $(".hidden-errors").text("Please enter your phone number.");
-                        $('#phone_number').focus();
-                        return false;
-                     }
-                     if($('#number_of_employees').val() == "") {
-                         $(".hidden-errors").addClass('.has-error');    
-                         $(".hidden-errors").text("Please choose the number of employees.");
-                         $('#number_of_employees').focus();
-                        return false;
-                     }
-                     if($('#industry').val() == "") {
-                         $(".hidden-errors").addClass('.has-error');    
-                         $(".hidden-errors").text("Please choose your industry.");
-                         $('#industry').focus();
-                        return false;
-                     }
-                }
                 
                 $(".hidden-errors").text(" ");
                 var elmForm = $("#form-step-" + stepNumber);
@@ -369,7 +447,7 @@ recaptcha_size = "normal"
 
             $("#smartwizard").on("showStep", function(e, anchorObject, stepNumber, stepDirection) {
                 // Enable finish button only on last step
-                if(stepNumber == 6){
+                if(stepNumber == 10){
                 	$('.sw-btn-prev').addClass('d-none');
                     $('.sw-btn-next').addClass('d-none');
                     $('#btn-finish').removeClass('disabled');
@@ -378,12 +456,37 @@ recaptcha_size = "normal"
             });
             $(".custom-question-1").click(function(e){
                 e.preventDefault();
-                $('#phone_system_needs').val($(this).attr('data-desc'));
+                $('#voip_needs').val($(this).attr('data-desc'));
                 $('.sw-btn-next').click();
             });
             $(".custom-question-2").click(function(e){
                 e.preventDefault();
-                $('#decision').val($(this).attr('data-desc'));
+                $('#internet-access').val($(this).attr('data-desc'));
+                $('.sw-btn-next').click();
+            });
+            $(".custom-question-3").click(function(e){
+                e.preventDefault();
+                $('#service-starts').val($(this).attr('data-desc'));
+                $('.sw-btn-next').click();
+            });
+            $(".custom-question-4").click(function(e){
+                e.preventDefault();
+                $('#number-of-calls').val($(this).attr('data-desc'));
+                $('.sw-btn-next').click();
+            });
+            $(".custom-question-5").click(function(e){
+                e.preventDefault();
+                $('#multi-access').val($(this).attr('data-desc'));
+                $('.sw-btn-next').click();
+            });
+            $(".custom-question-6").click(function(e){
+                e.preventDefault();
+                $('#international-calls').val($(this).attr('data-desc'));
+                $('.sw-btn-next').click();
+            });
+            $(".custom-question-7").click(function(e){
+                e.preventDefault();
+                $('#voip-exists').val($(this).attr('data-desc'));
                 $('.sw-btn-next').click();
             });
             $("#simpleContactSubmitButton").click(function(e){

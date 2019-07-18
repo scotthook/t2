@@ -1,7 +1,7 @@
-title = "business-phone-systems"
-url = "/business-phone-systems"
+title = "Internet"
+url = "/internet"
 layout = "form-template"
-meta_title = "Business Phone Systems"
+meta_title = "Internet"
 is_hidden = 0
 
 [testForm]
@@ -51,51 +51,157 @@ recaptcha_size = "normal"
                 <li><a href="#step-5">Step 5<br /><small></small></a></li>
                 <li><a href="#step-6">Step 6<br /><small></small></a></li>
                 <li><a href="#step-7">Step 7<br /><small></small></a></li>
+                <li><a href="#step-8">Step 8<br /><small></small></a></li>
+                <li><a href="#step-9">Step 9<br /><small></small></a></li>
+                <li><a href="#step-10">Step 10<br /><small></small></a></li>
+                <li><a href="#step-11">Step 11<br /><small></small></a></li>
+                <li><a href="#step-12">Step 12<br /><small></small></a></li>
             </ul>
 
             <div>
                 <div id="step-1">
                     <div id="form-step-0" role="form" data-toggle="validator">
-                    	<input type="hidden" name="campaign" value="business-phone-systems" />
+                    	<input type="hidden" name="campaign" value="internet" />
                         <div class="form-group">
                         <br/>
                         <div class="help-block with-errors hidden-errors"></div>
-                            <label for="phone_system_needs">Which best describes your phone system needs?</label><br/>
-                                  <button class='btn btn-lg radio-btn custom-question-1' data-desc="Installing new phone system"><i class="fa fa-phone-square q-icon-format"></i> Installing new phone system </button>
-                                  <button class='btn btn-lg radio-btn custom-question-1' data-desc="Replacing existing phone system"><i class="fa fa-phone-square q-icon-format"></i> Replacing existing phone system </button>
-                                  <button class='btn btn-lg radio-btn custom-question-1' data-desc="Expanding existing phone system"><i class="fa fa-phone-square q-icon-format"></i> Expanding existing phone system </button>
-                                  <input type="hidden" id="phone_system_needs"  name="phone_system_needs" value="" required />
-                            
+                            <label for="monthly-budget">What is your estimated monthly budget for Internet access? </label><br/>
+                          <button class='btn btn-lg radio-btn custom-question-1' data-desc="$50 - $300 per month (price range for Upgraded Business DSL)"><i class="fa fa-question q-icon-format"></i> $50 - $300 per month  </button>
+                          <button class='btn btn-lg radio-btn custom-question-1' data-desc="$350 - $1,200 per month (price range for T1)"><i class="fa fa-question q-icon-format"></i> $350 - $1,200 per month </button>
+                          <button class='btn btn-lg radio-btn custom-question-1' data-desc="$3,000 - $12,000 per month (price range for T3/DS3)"><i class="fa fa-question q-icon-format"></i> $3,000 - $12,000 per month </button>
+                          <input type="hidden" id="monthly-budget"  name="monthly-budget" value="" required />
                         </div>
                     </div>
-
                 </div>
+                
                 <div id="step-2">
                     <div id="form-step-1" role="form" data-toggle="validator">
                         <div class="form-group">
-                            <div class="help-block with-errors"></div>
-                            <label for="Approximately-how-many-phones-do-you-need">Approximately how many phones do you need?</label>
-                            <input type="number" class="form-control" name="approximately-how-many-phones-do-you-need" id="Approximately-how-many-phones-do-you-need" placeholder="" required>
+                            <div class="help-block with-errors hidden-errors"></div>
+                            <label for="number-of-location">How many physical business locations are you looking to set up with Internet service?</label><br/>
+                          <button class='btn btn-lg radio-btn custom-question-2' data-desc="1"><i class="fa fa-question q-icon-format"></i> 1 </button>
+                          <button class='btn btn-lg radio-btn custom-question-2' data-desc="2"><i class="fa fa-question q-icon-format"></i> 2 </button>
+                          <button class='btn btn-lg radio-btn custom-question-2' data-desc="3-4"><i class="fa fa-question q-icon-format"></i> 3-4 </button>
+                          <button class='btn btn-lg radio-btn custom-question-2' data-desc="5+"><i class="fa fa-question q-icon-format"></i> 5+ </button>
+                          <input type="hidden" id="number-of-location"  name="number-of-location" value="" required />
                             
                         </div>
                     </div>
                 </div>
+                
                 <div id="step-3">
                     <div id="form-step-2" role="form" data-toggle="validator">
                         <div class="form-group">
+                            <div class="help-block with-errors"></div>
+                            <label for="features">What features are you interested in? <br/><small>(Please select all apply)</small></label>
+                            <div class="funkyradio">
+                                <div class="funkyradio-success">
+                                    <input type="checkbox" name="features" id="chbox-features-1" value="Internet access " required/>
+                                    <label for="chbox-features-1">Internet access </label>
+                                </div>
+                                <div class="funkyradio-success">
+                                    <input type="checkbox" name="features" id="chbox-features-2" value="Voice (VoIP) "  />
+                                    <label for="chbox-features-2">Voice (VoIP) </label>
+                                </div>
+                                <div class="funkyradio-success">
+                                    <input type="checkbox" name="features" id="chbox-features-3" value="Integrated voice and data "  />
+                                    <label for="chbox-features-3">Integrated voice and data </label>
+                                </div>
+                                <div class="funkyradio-success">
+                                    <input type="checkbox" name="features" id="chbox-features-4" value="Point-to-Point (between servers or locations) " />
+                                    <label for="chbox-features-4">Point-to-Point (between servers or locations) </label>
+                                </div>
+                                <div class="funkyradio-success">
+                                    <input type="checkbox" name="features" id="chbox-features-5" value="Web or other server hosting " />
+                                    <label for="chbox-features-5">Web or other server hosting </label>
+                                </div>
+                                <div class="funkyradio-success">
+                                    <input type="checkbox" name="features" id="chbox-features-6" value="Video conferencing " />
+                                    <label for="chbox-features-6">Video conferencing </label>
+                                </div>
+                                <div class="funkyradio-success">
+                                    <input type="checkbox" name="features" id="chbox-features-7" value="Virtual Private Network (VPN) or Intranet " />
+                                    <label for="chbox-features-7">Virtual Private Network (VPN) or Intranet </label>
+                                </div>
+                                <div class="funkyradio-success">
+                                    <input type="checkbox" name="features" id="chbox-features-8" value="Other" />
+                                    <label for="chbox-features-8">Other</label>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="step-4">
+                    <div id="form-step-3" role="form" data-toggle="validator">
+                        <div class="form-group">
+                            <div class="help-block with-errors hidden-errors"></div>
+                            <label for="current-internet-type">Do you currently have business Internet access?</label><br/>
+                          <button class='btn btn-lg radio-btn custom-question-3' data-desc="Yes - DSL "><i class="fa fa-question q-icon-format"></i> Yes - DSL  </button>
+                          <button class='btn btn-lg radio-btn custom-question-3' data-desc="Yes - T1/ DS1 "><i class="fa fa-question q-icon-format"></i> Yes - T1/ DS1  </button>
+                          <button class='btn btn-lg radio-btn custom-question-3' data-desc="Yes - T3/ DS3 "><i class="fa fa-question q-icon-format"></i> Yes - T3/ DS3  </button>
+                          <button class='btn btn-lg radio-btn custom-question-3' data-desc="No"><i class="fa fa-question q-icon-format"></i> No </button>
+                          <input type="hidden" id="current-internet-type"  name="current-internet-type" value="" required />
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div id="step-5">
+                    <div id="form-step-4" role="form" data-toggle="validator">
+                        <div class="form-group">
                             <div class="help-block with-errors hidden-errors"></div>
                             <label for="When-do-you-anticipate-making-a-decision">When do you anticipate making a decision?</label>
-                            <button class='btn btn-lg radio-btn custom-question-2' data-desc="ASAP"><i class="fa fa-question-circle q-icon-format"></i> ASAP </button>
-                                  <button class='btn btn-lg radio-btn custom-question-2' data-desc="Within a few months"><i class="fa fa-question-circle q-icon-format"></i> Within a few months </button>
-                                  <button class='btn btn-lg radio-btn custom-question-2' data-desc="Between 3 and 6 months"><i class="fa fa-question-circle q-icon-format"></i> Between 3 and 6 months </button>
-                                  <button class='btn btn-lg radio-btn custom-question-2' data-desc="In more than 6 months"><i class="fa fa-question-circle q-icon-format"></i> In more than 6 months </button>
+                            <button class='btn btn-lg radio-btn custom-question-4' data-desc="ASAP"><i class="fa fa-question-circle q-icon-format"></i> ASAP </button>
+                                  <button class='btn btn-lg radio-btn custom-question-4' data-desc="In one month"><i class="fa fa-question-circle q-icon-format"></i> In one month </button>
+                                  <button class='btn btn-lg radio-btn custom-question-4' data-desc="In two months or more"><i class="fa fa-question-circle q-icon-format"></i> In two months or more </button>
                             <input type="hidden" id="decision"  name="when-do-you-anticipate-making-a-decision" value="" required />
                             
                         </div>
                     </div>
                 </div>
-                <div id="step-4">
-                    <div id="form-step-3" role="form" data-toggle="validator">
+                
+                <div id="step-6">
+                    <div id="form-step-5" role="form" data-toggle="validator">
+                        <div class="form-group">
+                            <div class="help-block with-errors hidden-errors"></div>
+                            <label for="first-six-digit-phone">What are the first six digits of the land-line telephone number where the internet access will be installed? Include area code. (No cell phones, please) <br/> <small>Ex. 617555</small></label>
+                            <input type="tel" id="first-six-digit-phone" name="first-six-digit-phone" pattern="^\d{6}$" data-minlength="6" maxlength="6" class="form-control" placeholder="" required>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="step-7">
+                    <div id="form-step-6" role="form" data-toggle="validator">
+                        <div class="form-group">
+                            <div class="help-block with-errors hidden-errors"></div>
+                            <label for="has-internet-provider">Are you contractually committed to your current Internet service?</label>
+                            <button class='btn btn-lg radio-btn custom-question-5' data-desc="No - we are not committed or do not have lines currently"><i class="fa fa-question-circle q-icon-format"></i> No </button>
+                                  <button class='btn btn-lg radio-btn custom-question-5' data-desc="Yes"><i class="fa fa-question-circle q-icon-format"></i> Yes </button>
+                            <input type="hidden" id="has-internet-provider"  name="has-internet-provider" value="" required />
+                            
+                        </div>
+                    </div>
+                </div>
+                <div id="step-8">
+                    <div id="form-step-7" role="form" data-toggle="validator">
+                        <div class="form-group">
+                            <div class="help-block with-errors hidden-errors"></div>
+                            <label for="multiple-internet-lines">Do you need multiple Internet/data lines?</label>
+                            <button class='btn btn-lg radio-btn custom-question-6' data-desc="No"><i class="fa fa-question-circle q-icon-format"></i> No </button>
+                                  <button class='btn btn-lg radio-btn custom-question-6' data-desc="Yes"><i class="fa fa-question-circle q-icon-format"></i> Yes </button>
+                                  <button class='btn btn-lg radio-btn custom-question-6' data-desc="Unsure"><i class="fa fa-question-circle q-icon-format"></i> Unsure </button>
+                            <input type="hidden" id="multiple-internet-lines"  name="multiple-internet-lines" value="" required />
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="step-9">
+                    <div id="form-step-8" role="form" data-toggle="validator">
                         <div class="form-group">
                             <div class="help-block with-errors hidden-errors"></div>
                             <label for="zip">What is your zip code?</label>
@@ -107,8 +213,8 @@ recaptcha_size = "normal"
                     </div>
                 </div>
                 
-                <div id="step-5">
-                    <div id="form-step-4" role="form" data-toggle="validator">
+                <div id="step-10">
+                    <div id="form-step-9" role="form" data-toggle="validator">
                         <div class="form-group">
                             <div class="help-block with-errors hidden-errors"></div>
                             <label for="email">What is your email?</label>
@@ -118,8 +224,8 @@ recaptcha_size = "normal"
                     </div>
                 </div>
                 
-                <div id="step-6">
-                    <div id="form-step-5" role="form" data-toggle="validator">
+                <div id="step-11">
+                    <div id="form-step-10" role="form" data-toggle="validator">
                         <div class="form-group">
                             <div class="help-block with-errors hidden-errors"></div>
                             <label for="first_name">First Name: </label>
@@ -162,8 +268,8 @@ recaptcha_size = "normal"
                     </div>
                 </div>
                 
-                <div id="step-7">
-                    <div id="form-step-6" role="form" data-toggle="validator">
+                <div id="step-12">
+                    <div id="form-step-11" role="form" data-toggle="validator">
                         <div class="form-group">
                              <div class="help-block with-errors hidden-errors"></div>
                             <label for="company_name">Company Name: </label>
@@ -236,6 +342,15 @@ recaptcha_size = "normal"
 <script src="{{ 'assets/js/jquery.smartWizard.min.js' | theme }}"></script>
 <script type="text/javascript">
         $(document).ready(function(){
+            function checkboxValidate(name){
+                var min = 1 //minumum number of boxes to be checked for this form-group
+                if($('input[name="'+name+'"]:checked').length<min){
+                    $('input[name="'+name+'"]').prop('required',true);
+                }
+                else{
+                    $('input[name="'+name+'"]').prop('required',false);
+                }
+            }
             // Toolbar extra buttons
             var btnFinish = $('<button id="btn-finish"></button>').text('Submit')
                                              .addClass('btn btn-info d-none')
@@ -277,14 +392,38 @@ recaptcha_size = "normal"
             $("#smartwizard").on("leaveStep", function(e, anchorObject, stepNumber, stepDirection) {
                 
                 if(stepNumber == 0) {
-                     if($('#phone_system_needs').val() == "") {
+                     if($('#monthly-budget').val() == "") {
                         $(".hidden-errors").addClass('.has-error');    
                         $(".hidden-errors").text("Please provide an answer.");
-                        $('#phone_system_needs').focus();
+                        $('#monthly-budget').focus();
+                        return false;
+                     }
+                }
+                if(stepNumber == 1) {
+                     if($('#number-of-location').val() == "") {
+                        $(".hidden-errors").addClass('.has-error');    
+                        $(".hidden-errors").text("Please provide an answer.");
+                        $('#number-of-location').focus();
                         return false;
                      }
                 }
                 if(stepNumber == 2) {
+                      if(checkboxValidate("features")) {
+                        $(".hidden-errors").addClass('.has-error');    
+                        $(".hidden-errors").text("Please provide an answer.");
+                        $('#chbox-features-1').focus();
+                        return false;
+                     }
+                }
+                if(stepNumber == 3) {
+                     if($('#current-internet-type').val() == "") {
+                        $(".hidden-errors").addClass('.has-error');    
+                        $(".hidden-errors").text("Please provide an answer.");
+                        $('#current-internet-type').focus();
+                        return false;
+                     }
+                }
+                if(stepNumber == 4) {
                      if($('#decision').val() == "") {
                         $(".hidden-errors").addClass('.has-error');    
                         $(".hidden-errors").text("Please provide an answer.");
@@ -292,8 +431,24 @@ recaptcha_size = "normal"
                         return false;
                      }
                 }
+                if(stepNumber == 6) {
+                     if($('#has-internet-provider').val() == "") {
+                        $(".hidden-errors").addClass('.has-error');    
+                        $(".hidden-errors").text("Please provide an answer.");
+                        $('#has-internet-provider').focus();
+                        return false;
+                     }
+                }
+                if(stepNumber == 7) {
+                     if($('#multiple-internet-lines').val() == "") {
+                        $(".hidden-errors").addClass('.has-error');    
+                        $(".hidden-errors").text("Please provide an answer.");
+                        $('#multiple-internet-lines').focus();
+                        return false;
+                     }
+                }
                 
-                 if(stepNumber == 3) {
+                 if(stepNumber == 8) {
                      if($('#city').val() == "") {
                         $(".hidden-errors").addClass('has-error');    
                         $(".hidden-errors").text("Please enter a valid zip code.");
@@ -302,7 +457,7 @@ recaptcha_size = "normal"
                      }
                 }
                 
-                if(stepNumber == 5) {
+                if(stepNumber == 10) {
                      if($('#first_name').val() == "") {
                         $(".hidden-errors").addClass('.has-error');    
                         $(".hidden-errors").text("Please enter your first name.");
@@ -323,32 +478,6 @@ recaptcha_size = "normal"
                      }
                 }
                 
-                if(stepNumber == 6) {
-                     if($('#company_name').val() == "") {
-                        $(".hidden-errors").addClass('.has-error');    
-                        $(".hidden-errors").text("Please enter your company name.");
-                        $('#company_name').focus();
-                        return false;
-                     }
-                     if($('#phone_number').val() == "") {
-                         $(".hidden-errors").addClass('.has-error');    
-                        $(".hidden-errors").text("Please enter your phone number.");
-                        $('#phone_number').focus();
-                        return false;
-                     }
-                     if($('#number_of_employees').val() == "") {
-                         $(".hidden-errors").addClass('.has-error');    
-                         $(".hidden-errors").text("Please choose the number of employees.");
-                         $('#number_of_employees').focus();
-                        return false;
-                     }
-                     if($('#industry').val() == "") {
-                         $(".hidden-errors").addClass('.has-error');    
-                         $(".hidden-errors").text("Please choose your industry.");
-                         $('#industry').focus();
-                        return false;
-                     }
-                }
                 
                 $(".hidden-errors").text(" ");
                 var elmForm = $("#form-step-" + stepNumber);
@@ -369,7 +498,7 @@ recaptcha_size = "normal"
 
             $("#smartwizard").on("showStep", function(e, anchorObject, stepNumber, stepDirection) {
                 // Enable finish button only on last step
-                if(stepNumber == 6){
+                if(stepNumber == 11){
                 	$('.sw-btn-prev').addClass('d-none');
                     $('.sw-btn-next').addClass('d-none');
                     $('#btn-finish').removeClass('disabled');
@@ -378,14 +507,35 @@ recaptcha_size = "normal"
             });
             $(".custom-question-1").click(function(e){
                 e.preventDefault();
-                $('#phone_system_needs').val($(this).attr('data-desc'));
+                $('#monthly-budget').val($(this).attr('data-desc'));
                 $('.sw-btn-next').click();
             });
             $(".custom-question-2").click(function(e){
                 e.preventDefault();
+                $('#number-of-location').val($(this).attr('data-desc'));
+                $('.sw-btn-next').click();
+            });
+            $(".custom-question-3").click(function(e){
+                e.preventDefault();
+                $('#current-internet-type').val($(this).attr('data-desc'));
+                $('.sw-btn-next').click();
+            });
+            $(".custom-question-4").click(function(e){
+                e.preventDefault();
                 $('#decision').val($(this).attr('data-desc'));
                 $('.sw-btn-next').click();
             });
+            $(".custom-question-6").click(function(e){
+                e.preventDefault();
+                $('#multiple-internet-lines').val($(this).attr('data-desc'));
+                $('.sw-btn-next').click();
+            });
+            $(".custom-question-5").click(function(e){
+                e.preventDefault();
+                $('#has-internet-provider').val($(this).attr('data-desc'));
+                $('.sw-btn-next').click();
+            });
+            
             $("#simpleContactSubmitButton").click(function(e){
                 e.preventDefault();
                 if($('#company_name').val() == "") {

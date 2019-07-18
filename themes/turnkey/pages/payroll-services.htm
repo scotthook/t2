@@ -1,7 +1,7 @@
-title = "business-phone-systems"
-url = "/business-phone-systems"
-layout = "form-template"
-meta_title = "Business Phone Systems"
+title = "Payroll Services"
+url = "/payroll-services"
+layout = "default"
+meta_title = "Payroll Services"
 is_hidden = 0
 
 [testForm]
@@ -51,51 +51,93 @@ recaptcha_size = "normal"
                 <li><a href="#step-5">Step 5<br /><small></small></a></li>
                 <li><a href="#step-6">Step 6<br /><small></small></a></li>
                 <li><a href="#step-7">Step 7<br /><small></small></a></li>
+                <li><a href="#step-8">Step 8<br /><small></small></a></li>
             </ul>
 
             <div>
                 <div id="step-1">
                     <div id="form-step-0" role="form" data-toggle="validator">
-                    	<input type="hidden" name="campaign" value="business-phone-systems" />
+                    	<input type="hidden" name="campaign" value="payroll-services" />
                         <div class="form-group">
                         <br/>
                         <div class="help-block with-errors hidden-errors"></div>
-                            <label for="phone_system_needs">Which best describes your phone system needs?</label><br/>
-                                  <button class='btn btn-lg radio-btn custom-question-1' data-desc="Installing new phone system"><i class="fa fa-phone-square q-icon-format"></i> Installing new phone system </button>
-                                  <button class='btn btn-lg radio-btn custom-question-1' data-desc="Replacing existing phone system"><i class="fa fa-phone-square q-icon-format"></i> Replacing existing phone system </button>
-                                  <button class='btn btn-lg radio-btn custom-question-1' data-desc="Expanding existing phone system"><i class="fa fa-phone-square q-icon-format"></i> Expanding existing phone system </button>
-                                  <input type="hidden" id="phone_system_needs"  name="phone_system_needs" value="" required />
+                            <label for="managing-payroll">How are you currently managing payroll? </label><br/>
+                                  <button class='btn btn-lg radio-btn custom-question-1' data-desc="In-house"><i class="fa fa-question q-icon-format"></i> In-house </button>
+                                  <button class='btn btn-lg radio-btn custom-question-1' data-desc="Using a payroll service"><i class="fa fa-question q-icon-format"></i> Using a payroll service </button>
+                                  <button class='btn btn-lg radio-btn custom-question-1' data-desc="Not currently processing payroll"><i class="fa fa-question q-icon-format"></i> Not currently processing payroll </button>
+                                  <button class='btn btn-lg radio-btn custom-question-1' data-desc="Other"><i class="fa fa-question q-icon-format"></i> Other </button>
+                                  <input type="hidden" id="managing-payroll"  name="managing-payroll" value="" required />
                             
                         </div>
                     </div>
 
                 </div>
+                
+                
                 <div id="step-2">
                     <div id="form-step-1" role="form" data-toggle="validator">
                         <div class="form-group">
+                            <div class="help-block with-errors hidden-errors"></div>
+                            <label for="process-payroll-time">How often do you plan to process payroll? </label><br/>
+                              <button class='btn btn-lg radio-btn custom-question-2' data-desc="Weekly"><i class="fa fa-question q-icon-format"></i> Weekly </button>
+                              <button class='btn btn-lg radio-btn custom-question-2' data-desc="Biweekly"><i class="fa fa-question q-icon-format"></i> Biweekly </button>
+                              <button class='btn btn-lg radio-btn custom-question-2' data-desc="Semimonthly"><i class="fa fa-question q-icon-format"></i> Semimonthly </button>
+                              <button class='btn btn-lg radio-btn custom-question-2' data-desc="Monthly"><i class="fa fa-question q-icon-format"></i> Monthly </button>
+                              <button class='btn btn-lg radio-btn custom-question-2' data-desc="Not sure"><i class="fa fa-question q-icon-format"></i> Not sure </button>
+                              <input type="hidden" id="process-payroll-time"  name="process-payroll-time" value="" required />
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="step-3">
+                    <div id="form-step-2" role="form" data-toggle="validator">
+                        <div class="form-group">
                             <div class="help-block with-errors"></div>
-                            <label for="Approximately-how-many-phones-do-you-need">Approximately how many phones do you need?</label>
-                            <input type="number" class="form-control" name="approximately-how-many-phones-do-you-need" id="Approximately-how-many-phones-do-you-need" placeholder="" required>
+                            <label for="features">Are you interested in learning more about any of these additional payroll services? <br/><small>(Please select all apply)</small></label>
+                            <div class="funkyradio">
+                                <div class="funkyradio-success">
+                                    <input type="checkbox" name="features" id="chbox-features-1" value="Direct deposit" required/>
+                                    <label for="chbox-features-1">Direct deposit</label>
+                                </div>
+                                <div class="funkyradio-success">
+                                    <input type="checkbox" name="features" id="chbox-features-2" value="Pay cards"  />
+                                    <label for="chbox-features-2">Pay cards</label>
+                                </div>
+                                <div class="funkyradio-success">
+                                    <input type="checkbox" name="features" id="chbox-features-3" value="Online access for employees"  />
+                                    <label for="chbox-features-3">Online access for employees</label>
+                                </div>
+                                <div class="funkyradio-success">
+                                    <input type="checkbox" name="features" id="chbox-features-4" value="Tax filing services" />
+                                    <label for="chbox-features-4">Tax filing services</label>
+                                </div>
+                                <div class="funkyradio-success">
+                                    <input type="checkbox" name="features" id="chbox-features-5" value="None" />
+                                    <label for="chbox-features-5">None</label>
+                                </div>
+                            </div>
                             
                         </div>
                     </div>
                 </div>
-                <div id="step-3">
-                    <div id="form-step-2" role="form" data-toggle="validator">
+                
+                
+                <div id="step-4">
+                    <div id="form-step-3" role="form" data-toggle="validator">
                         <div class="form-group">
                             <div class="help-block with-errors hidden-errors"></div>
                             <label for="When-do-you-anticipate-making-a-decision">When do you anticipate making a decision?</label>
-                            <button class='btn btn-lg radio-btn custom-question-2' data-desc="ASAP"><i class="fa fa-question-circle q-icon-format"></i> ASAP </button>
-                                  <button class='btn btn-lg radio-btn custom-question-2' data-desc="Within a few months"><i class="fa fa-question-circle q-icon-format"></i> Within a few months </button>
-                                  <button class='btn btn-lg radio-btn custom-question-2' data-desc="Between 3 and 6 months"><i class="fa fa-question-circle q-icon-format"></i> Between 3 and 6 months </button>
-                                  <button class='btn btn-lg radio-btn custom-question-2' data-desc="In more than 6 months"><i class="fa fa-question-circle q-icon-format"></i> In more than 6 months </button>
+                            <button class='btn btn-lg radio-btn custom-question-3' data-desc="ASAP"><i class="fa fa-question-circle q-icon-format"></i> ASAP </button>
+                                  <button class='btn btn-lg radio-btn custom-question-3' data-desc="In one month"><i class="fa fa-question-circle q-icon-format"></i> In one month </button>
+                                  <button class='btn btn-lg radio-btn custom-question-3' data-desc="In two months or more"><i class="fa fa-question-circle q-icon-format"></i> In two months or more </button>
                             <input type="hidden" id="decision"  name="when-do-you-anticipate-making-a-decision" value="" required />
                             
                         </div>
                     </div>
                 </div>
-                <div id="step-4">
-                    <div id="form-step-3" role="form" data-toggle="validator">
+                
+                <div id="step-5">
+                    <div id="form-step-4" role="form" data-toggle="validator">
                         <div class="form-group">
                             <div class="help-block with-errors hidden-errors"></div>
                             <label for="zip">What is your zip code?</label>
@@ -107,8 +149,8 @@ recaptcha_size = "normal"
                     </div>
                 </div>
                 
-                <div id="step-5">
-                    <div id="form-step-4" role="form" data-toggle="validator">
+                <div id="step-6">
+                    <div id="form-step-5" role="form" data-toggle="validator">
                         <div class="form-group">
                             <div class="help-block with-errors hidden-errors"></div>
                             <label for="email">What is your email?</label>
@@ -118,8 +160,8 @@ recaptcha_size = "normal"
                     </div>
                 </div>
                 
-                <div id="step-6">
-                    <div id="form-step-5" role="form" data-toggle="validator">
+                <div id="step-7">
+                    <div id="form-step-6" role="form" data-toggle="validator">
                         <div class="form-group">
                             <div class="help-block with-errors hidden-errors"></div>
                             <label for="first_name">First Name: </label>
@@ -162,8 +204,8 @@ recaptcha_size = "normal"
                     </div>
                 </div>
                 
-                <div id="step-7">
-                    <div id="form-step-6" role="form" data-toggle="validator">
+                <div id="step-8">
+                    <div id="form-step-7" role="form" data-toggle="validator">
                         <div class="form-group">
                              <div class="help-block with-errors hidden-errors"></div>
                             <label for="company_name">Company Name: </label>
@@ -236,6 +278,15 @@ recaptcha_size = "normal"
 <script src="{{ 'assets/js/jquery.smartWizard.min.js' | theme }}"></script>
 <script type="text/javascript">
         $(document).ready(function(){
+            function checkboxValidate(name){
+                var min = 1 //minumum number of boxes to be checked for this form-group
+                if($('input[name="'+name+'"]:checked').length<min){
+                    $('input[name="'+name+'"]').prop('required',true);
+                }
+                else{
+                    $('input[name="'+name+'"]').prop('required',false);
+                }
+            }
             // Toolbar extra buttons
             var btnFinish = $('<button id="btn-finish"></button>').text('Submit')
                                              .addClass('btn btn-info d-none')
@@ -277,14 +328,31 @@ recaptcha_size = "normal"
             $("#smartwizard").on("leaveStep", function(e, anchorObject, stepNumber, stepDirection) {
                 
                 if(stepNumber == 0) {
-                     if($('#phone_system_needs').val() == "") {
+                     if($('#managing-payroll').val() == "") {
                         $(".hidden-errors").addClass('.has-error');    
                         $(".hidden-errors").text("Please provide an answer.");
-                        $('#phone_system_needs').focus();
+                        $('#managing-payroll').focus();
                         return false;
                      }
                 }
+                if(stepNumber == 1) {
+                     if($('#process-payroll-time').val() == "") {
+                        $(".hidden-errors").addClass('.has-error');    
+                        $(".hidden-errors").text("Please provide an answer.");
+                        $('#process-payroll-time').focus();
+                        return false;
+                     }
+                }
+                
                 if(stepNumber == 2) {
+                     if(checkboxValidate("features")) {
+                        $(".hidden-errors").addClass('.has-error');    
+                        $(".hidden-errors").text("Please provide an answer.");
+                        $('#chbox-features-1').focus();
+                        return false;
+                     }
+                }
+                if(stepNumber == 3) {
                      if($('#decision').val() == "") {
                         $(".hidden-errors").addClass('.has-error');    
                         $(".hidden-errors").text("Please provide an answer.");
@@ -293,7 +361,7 @@ recaptcha_size = "normal"
                      }
                 }
                 
-                 if(stepNumber == 3) {
+                 if(stepNumber == 4) {
                      if($('#city').val() == "") {
                         $(".hidden-errors").addClass('has-error');    
                         $(".hidden-errors").text("Please enter a valid zip code.");
@@ -302,7 +370,7 @@ recaptcha_size = "normal"
                      }
                 }
                 
-                if(stepNumber == 5) {
+                if(stepNumber == 6) {
                      if($('#first_name').val() == "") {
                         $(".hidden-errors").addClass('.has-error');    
                         $(".hidden-errors").text("Please enter your first name.");
@@ -323,32 +391,6 @@ recaptcha_size = "normal"
                      }
                 }
                 
-                if(stepNumber == 6) {
-                     if($('#company_name').val() == "") {
-                        $(".hidden-errors").addClass('.has-error');    
-                        $(".hidden-errors").text("Please enter your company name.");
-                        $('#company_name').focus();
-                        return false;
-                     }
-                     if($('#phone_number').val() == "") {
-                         $(".hidden-errors").addClass('.has-error');    
-                        $(".hidden-errors").text("Please enter your phone number.");
-                        $('#phone_number').focus();
-                        return false;
-                     }
-                     if($('#number_of_employees').val() == "") {
-                         $(".hidden-errors").addClass('.has-error');    
-                         $(".hidden-errors").text("Please choose the number of employees.");
-                         $('#number_of_employees').focus();
-                        return false;
-                     }
-                     if($('#industry').val() == "") {
-                         $(".hidden-errors").addClass('.has-error');    
-                         $(".hidden-errors").text("Please choose your industry.");
-                         $('#industry').focus();
-                        return false;
-                     }
-                }
                 
                 $(".hidden-errors").text(" ");
                 var elmForm = $("#form-step-" + stepNumber);
@@ -369,7 +411,7 @@ recaptcha_size = "normal"
 
             $("#smartwizard").on("showStep", function(e, anchorObject, stepNumber, stepDirection) {
                 // Enable finish button only on last step
-                if(stepNumber == 6){
+                if(stepNumber == 7){
                 	$('.sw-btn-prev').addClass('d-none');
                     $('.sw-btn-next').addClass('d-none');
                     $('#btn-finish').removeClass('disabled');
@@ -378,10 +420,15 @@ recaptcha_size = "normal"
             });
             $(".custom-question-1").click(function(e){
                 e.preventDefault();
-                $('#phone_system_needs').val($(this).attr('data-desc'));
+                $('#managing-payroll').val($(this).attr('data-desc'));
                 $('.sw-btn-next').click();
             });
             $(".custom-question-2").click(function(e){
+                e.preventDefault();
+                $('#process-payroll-time').val($(this).attr('data-desc'));
+                $('.sw-btn-next').click();
+            });
+            $(".custom-question-3").click(function(e){
                 e.preventDefault();
                 $('#decision').val($(this).attr('data-desc'));
                 $('.sw-btn-next').click();

@@ -1,4 +1,16 @@
 description = "Footer navigation"
+
+[builderList]
+modelClass = "AndrewPe\Crm\Models\Campaign"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "name"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+sortColumn = "name"
+sortDirection = "asc"
 ==
 <!-- Footer -->
     <footer class="container-fluid padMe50">
@@ -6,24 +18,22 @@ description = "Footer navigation"
 	    <div class="row">
 	    	<div class="col-lg-4 col-md-3">
 	    		<a class="footer-brand" href="/">
-		      		<img src="{{ 'assets/images/turnkey-logo.png' | theme }}" />
+		      		<img src="{{ 'assets/images/turnkey-office-solutions-blue.png' | theme }}" />
 		      	</a>
 	    	</div>
 	    	<div class="col-md-2">
 	    		<a  class="footerLinkHeader" href="#">Categories</a>
-		    	 <a href="/business-phone-systems">Business Phone Systems</a>
-	             <a href="/computer-equipment">Computer Equipment</a>
-	             <a href="/insurance">Insurance</a>
-	             <a href="/internet">Internet</a>
-	             <a href="/security">Security</a>
-	             <a href="/finance">Finance</a>
-	             <a href="/marketing">Marketing</a>
-	             <a href="/telecom-equipment">Telecom Equipment</a>
-	             <a href="/office-equipment">Office Equipment</a>
-	             <a href="/healthcare">Healthcare</a>
-	             <a href="/professional-services">Professional Services</a>
-	             <a href="/hr-personnel">HR & Personnel</a></li>
-	             <a href="/payroll-services">Payroll Services</a>
+	    		
+	    		{% for record in records %}
+                        {# Use spaceless tag to remove spaces inside the A tag. #}
+                        {% spaceless %}
+                            <a href="{{ record.page_url }}">
+                            {{ record.name }}
+                            </a>
+                        {% endspaceless %}
+                {% else %}
+                    {{ noRecordsMessage }}
+                {% endfor %}
 	    	</div>
 	    	
 	    	<div class="col-md-2">
