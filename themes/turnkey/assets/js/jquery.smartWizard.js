@@ -297,13 +297,15 @@
             // Find the next not disabled step
             for (var i = si; i < this.steps.length; i++) {
                 if (!this.steps.eq(i).parent('li').hasClass('disabled') && !this.steps.eq(i).parent('li').hasClass('hidden')) {
+                	
                     si = i;
                     break;
                 }
             }
-
+            
             if (this.steps.length <= si) {
                 if (!this.options.cycleSteps) {
+                	
                     return false;
                 }
                 si = 0;
@@ -330,6 +332,7 @@
             return true;
         },
         _showStep: function (idx) {
+        	$("body, html").animate({scrollTop: -1000});
             // If step not found, skip
             if (!this.steps.eq(idx)) {
                 return false;
@@ -354,16 +357,14 @@
             var stepDirection = '';
             var elm = this.steps.eq(idx);
             var contentURL = elm.data('content-url') && elm.data('content-url').length > 0 ? elm.data('content-url') : this.options.contentURL;
-
             if (this.current_index !== null && this.current_index !== idx) {
                 stepDirection = this.current_index < idx ? "forward" : "backward";
             }
-
             // Trigger "leaveStep" event
             if (this.current_index !== null && this._triggerEvent("leaveStep", [curTab, this.current_index, stepDirection]) === false) {
+            	$("body, html").animate({scrollTop: -1000});
                 return false;
             }
-
             if (contentURL && contentURL.length > 0 && (!elm.data('has-content') || !this.options.contentCache)) {
                 // Get ajax content and then show step
                 var selPage = elm.length > 0 ? $(elm.attr("href"), this.main) : null;
@@ -458,7 +459,6 @@
             this._fixHeight(idx);
             // Update the current index
             this.current_index = idx;
-
             // Trigger "showStep" event
             this._triggerEvent("showStep", [selTab, this.current_index, stepDirection, stepPosition]);
             return true;
