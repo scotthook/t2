@@ -233,7 +233,7 @@ recaptcha_size = "normal"
                         <div class="form-group">
                             <div class="help-block with-errors hidden-errors"></div>
                             <label for="zip">What is your zip code?</label>
-                            <input type="number" id="zip" name="zip" data-minlength="5" maxlength="5" class="form-control" placeholder="" required>
+                            <input type="text" id="zip" name="zip" data-minlength="5" maxlength="5" class="form-control" placeholder="" required>
                              <input type="hidden" id="city" name="city" value="" class="form-control"    />
                              <input type="hidden" id="state" name="state" value="" class="form-control"  />
                             
@@ -372,6 +372,8 @@ recaptcha_size = "normal"
 <script src="{{ 'assets/js/jquery.smartWizard.min.js' | theme }}"></script>
 <script type="text/javascript">
         $(document).ready(function(){
+            $("#zip").inputFilter(function(value) {
+            return /^\d*$/.test(value); });
             function checkboxValidate(name){
                 var min = 1 //minumum number of boxes to be checked for this form-group
                 if($('input[name="'+name+'"]:checked').length<min){
