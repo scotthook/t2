@@ -26,7 +26,7 @@ $imagePath : "/themes/turnkey/assets/images";
 /******************************/
 
 html, body, div, p{
-	font-family: 'Raleway', Arial, sans-serif;
+	font-family: 'Avenir', Arial, sans-serif;
 	color:#666;
 
 }
@@ -35,7 +35,9 @@ a{
 	color:#0082ca;
 	cursor:pointer;
 }
-
+.white{
+	color:#fff;
+}
 h2{
 	font-size:60px;
 }
@@ -56,6 +58,14 @@ img{
 	max-width:100%;
 }
 
+.blue-header strong {
+	font-family : Avenir;
+  font-size : 22px;
+  line-height : 27px;
+  color : #4268B1;
+  color : rgb(66, 104, 177);
+}
+
 /******************************/
 /*         Navigation         */
 /******************************/
@@ -65,7 +75,7 @@ img{
 }
 
 nav{
-	background-color:#fff;
+	background-color:#4268B1;
 	padding:45px 20px !important;
 }
 
@@ -105,7 +115,9 @@ nav li ul li{
     background-color: #f8f9fa;
     color:#000;
 }
-
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+}
 .dropdown-submenu {
   position: relative;
 }
@@ -221,7 +233,7 @@ position: relative;
 /******************************/
 
 main{
-	margin-top:180px;
+	margin-top:160px;
 }
 
 
@@ -392,14 +404,128 @@ main{
 }
 .home-bg{
     height:475px;
+    
     background-size:cover;
     background:url(#{$imagePath}/home-bg.jpg) no-repeat center;
     background-attachment: fixed;
+    
+}
+.bg-holder {
+	height:475px;
+	width: auto;
+	color:#fff;
+	position: relative;
+	 z-index: 5;
+}
+.new-home-bg{
+    height:475px;
+    width:100%;
+    position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+    background-size:cover;
+    background:url(#{$imagePath}/turnkey-background.jpg) no-repeat top;
+    background-attachment: fixed;
+}
+.bg-layer {
+	height:100%;
+  	background : rgba(66, 104, 177, 1);
+	opacity: 0.5;
+	width:100%;
+}
+.new-home-bg h1{
+	color:#fff;
+    position: absolute;
+    top: 55px;
+    left: 200px;
+    font-size: xxx-large;
+    font-family: Avenir;
+    font-size: 47px;
+    line-height: 52px;
+    letter-spacing: -0.47px;
+	
+}
+.new-home-bg img {
+	position: absolute;
+    top: 0px;
+    left: 856px;
+    height: 100%;
+    }
+.orange-box {
+	border-radius: 5px;
+    background: #f19421;
+    width: 300px;
+    padding: 20px;
+}
+.orange-box p {
+	color:#fff;
+	line-height:15px;
+}
+.obox1 {
+	position: absolute;
+    top: 170px;
+    left: 210px;
+    height: 135px;
+}
+
+.obox2 {
+	position: absolute;
+    top: 170px;
+    left: 520px;
+    height: 135px;
+}
+
+ .obox3 {
+	position: absolute;
+    top: 315px;
+    left: 210px;
+}
+
+ .obox4 {
+	position: absolute;
+    top: 315px;
+    left: 520px;
+}
+
+.provider-txt p {
+	 font-family : Avenir;
+  font-size : 14px;
+  line-height : 35px;
+  letter-spacing : -0.14px;
+  color : #414042;
+  color : rgb(65, 64, 66);
+}
+
+.provider-txt img {
+	margin-right:25px;
+}
+
+.head1 {
+	font-family : Avenir;
+  font-size : 33px;
+  line-height : 35px;
+  letter-spacing : -0.33px;
+  color : #414042;
+  color : rgb(65, 64, 66);
+}
+
+.content1 {
+	 font-family : Avenir;
+  font-size : 20px;
+  line-height : 28px;
+  color : #414042;
+  color : rgb(65, 64, 66);
+}
+.bggrey {
+background : #f1f2f2;
 }
 .page-not-found-bg{
     height:475px;
     background-size:cover;
-    background:url(#{$imagePath}/404-bg.jpg) no-repeat center ;
+    background:url(#{$imagePath}/turnkey-background.jpg) no-repeat center ;
     background-attachment: fixed;
     
 }
@@ -850,6 +976,43 @@ main{
      font-size:1.7rem;
 }
 
+.orangeBtn{
+	padding:15px 30px;
+	font-size:1rem;
+	background:#f19421;
+	color:#fff !important;
+	border-radius:30px;
+	border:none;
+	margin:20px 0 0 0;
+	transition: all 0.2s ease-in-out;
+	white-space:normal;
+}
+
+.orangeBtn:hover{
+	background:#f19421;
+	transform: scale(1.03);
+
+}
+
+.hollowBtn{
+	font-size:1rem;
+	background:#f1f2f2;;
+	color:#4268B1 !important;
+	border-radius:20px;
+	border:none;
+	width: 250px;
+	margin:20px 0 0 0;
+	transition: all 0.2s ease-in-out;
+	white-space:normal;
+	border: 1px solid #4268B1;
+}
+
+.hollowBtn{
+	background:#f1f2f2;;
+	transform: scale(1.03);
+
+}
+
 .greenBtn{
 	background:#3DAE2B;
 	color:#fff !important;
@@ -1016,13 +1179,14 @@ main{
 /******************************/
 
 footer{
-	background:#e9eaec;
+	background:#353636;
 }
 
 footer a{
 	font-size:12px;
 	display:block;
 	margin:8px auto;
+	color:#fff;
 }
 
 .footer-brand img{
@@ -1039,8 +1203,9 @@ footer a{
 }
 
 .footerLinkHeader{
-	color:#666;
+	color:#fff;
 	font-size:15px;
+	font-weight:bold;
 }
 
 .preFooter{
