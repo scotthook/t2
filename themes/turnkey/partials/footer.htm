@@ -22,24 +22,24 @@ sortDirection = "asc"
 		      	</a>
 		      	<span id="siteseal"><script async type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=iJP3xkdvMnKngvrTktkRAkyqhL4vI1NTwmjoTh8gOyR35ErQ26k3Tw5fjVMb"></script></span>
 	    	</div>
-	    	<div class="col-md-2">
+	    	<div class="col-md-4">
 	    		<a  class="footerLinkHeader" href="#">Categories</a>
-	    		
+	    		<div class="row">
 	    		{% for record in records %}
                         {# Use spaceless tag to remove spaces inside the A tag. #}
                         {% spaceless %}
+                        <div class="col-md-6 col-sm-12">
                             <a href="{{ record.page_url }}">
                             {{ record.name }}
                             </a>
+                            </div>
                         {% endspaceless %}
                 {% else %}
+                 <div class="col-sm-12">
                     {{ noRecordsMessage }}
+                    </div>
                 {% endfor %}
-	    	</div>
-	    	
-	    	<div class="col-md-2">
-	    		<a  class="footerLinkHeader" href="#">Partners</a>
-				<a href="http://www.dialinginnovations.com" target="_blank">Dialing Innovations</a>
+                </div>
 	    	</div>
 	    	
 	    	<div class="col-md-3">
